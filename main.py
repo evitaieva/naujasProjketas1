@@ -1,6 +1,8 @@
-if 7:
-    print('phyton thinks its a true')
-else:
-    print('phyton thinks i know nothing')
+# if 7:
+#     print('phyton thinks its a true')
+# else:
+#     print('phyton thinks i know nothing')
+#
+# print('pradedu rink zaliu staskiukus')
 
-print('pradedu rink zaliu staskiukus')
+print('hello')
