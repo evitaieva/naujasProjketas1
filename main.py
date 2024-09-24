@@ -60,9 +60,19 @@ import pathlib
 # else:
 #     print("message of dissapointment")
 
-file_format = pathlib.Path('main.py').suffix
-if file_format == '.py':
-    print('failas . py')
-else:
-    print('failas ne .py')
+# file_format = pathlib.Path('main.py').suffix
+# if file_format == '.py':
+#     print('failas . py')
+# else:
+#     print('failas ne .py')
 
+print('prasau parasykite skaiciu')
+number = int(input())
+if number % 2 ==0:
+    print('kintamasis yra lyginis')
+elif number % 5 ==0:
+    print('kintamasis dalijasi is 5')
+elif number ==3:
+    print('kintamasis yra 3')
+else:
+    print("message of dissapointment")
