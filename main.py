@@ -66,13 +66,30 @@ import pathlib
 # else:
 #     print('failas ne .py')
 
-print('prasau parasykite skaiciu')
-number = int(input())
-if number % 2 ==0:
-    print('kintamasis yra lyginis')
-elif number % 5 ==0:
-    print('kintamasis dalijasi is 5')
-elif number ==3:
-    print('kintamasis yra 3')
+# print('prasau parasykite skaiciu')
+# number = int(input())
+# if number % 2 ==0:
+#     print('kintamasis yra lyginis')
+# elif number % 5 ==0:
+#     print('kintamasis dalijasi is 5')
+# elif number ==3:
+#     print('kintamasis yra 3')
+# else:
+#     print("message of dissapointment")
+
+print('prasau parasykite 3 skaicius')
+number1 = int(input())
+number2 = int(input())
+number3 = int(input())
+if number1 - number2  ==0:
+    print('pirmi 2 skaiciai yra lygus')
+elif number1 - number3  ==0:
+    print('pirmas ir trecias skaiciai lygus')
+elif number3 > number1:
+    print('trecias yra didesnis uz pirma')
+elif number3 < number1:
+    print('trecias yra mazesnis uz pirma')
+elif number3 * 2 == number2:
+    print('trecias yra didesnis uz pirma')
 else:
     print("message of dissapointment")
