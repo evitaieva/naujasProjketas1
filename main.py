@@ -66,6 +66,12 @@ import pathlib
 # else:
 #     print('failas ne .py')
 
+# failo_kelias = str(input("Iveskite failo kelia: "))
+# if failo_kelias.endswith(".py"):
+#     print("Tai yra Python failas")
+# else:
+#     print("Tai nėra Python failas")
+
 # print('prasau parasykite skaiciu')
 # number = int(input())
 # if number % 2 ==0:
@@ -105,13 +111,26 @@ import pathlib
 # elif (number3 > number1) and (number3 > number2):
 #     print('number3 yra yra didziausias')
 
-print('prasau parasykite 3 skaicius')
-number1 = int(input())
-number2 = int(input())
-number3 = int(input())
-if (number1 < number2) and (number1 < number3):
-    print('number1 yra maziausias')
-elif (number2 < number1) and (number2 < number3):
-    print('number2 yra yra maziausias')
-elif (number3 < number1) and (number3 < number2):
-    print('number3 yra yra maziausias')
+# print('prasau parasykite 3 skaicius')
+# number1 = int(input())
+# number2 = int(input())
+# number3 = int(input())
+# if (number1 < number2) and (number1 < number3):
+#     print('number1 yra maziausias')
+# elif (number2 < number1) and (number2 < number3):
+#     print('number2 yra yra maziausias')
+# elif (number3 < number1) and (number3 < number2):
+#     print('number3 yra yra maziausias')
+
+print('ispausdinkite egzaminu rezultatus')
+rez1 = int(input())
+rez2 = int(input())
+rez3 = int(input())
+vidurkis = (rez1 + rez2 + rez3) / 3
+print(vidurkis)
+if (vidurkis > 8) and (vidurkis < 10):
+    print('vidurkis 8-10')
+elif (vidurkis > 5) and (vidurkis < 8):
+    print('vidurkis 5-8')
+elif (vidurkis < 5):
+    print('vidurkis < 5')
