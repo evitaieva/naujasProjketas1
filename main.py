@@ -6,3 +6,4 @@
 # print('pradedu rink zaliu staskiukus')
 
 print('hello')
+print("hello 9/24")
