@@ -201,22 +201,39 @@ import random
 # else:
 #     print('nesamone')
 
-# Naudokite funkcija random.randint(x,x). Sukurkite tris kintamuosius ir
-# naudodamiesi funkcija random.randint(x,x) jiems priskirkite atsitiktines reikšmes nuo 0 iki 25.
-# Raskite ir atspausdinkite kintąmąjį turintį vidurinę reikšmę.
 
-num1 = random.randint(0, 25)
-num2 = random.randint(0, 25)
-num3 = random.randint(0, 25)
-print(num1)
-print(num2)
-print(num3)
-if num1 != num2 and num1 != num3 and num2 != num3:
-    if num1 > num2 and num1 < num3:
-        print(num1)
-    elif num2 > num1 and num2 < num3:
-        print(num2)
-    elif num3 > num1 and num3 < num2:
-        print(num3)
+# num1 = random.randint(0, 25)
+# num2 = random.randint(0, 25)
+# num3 = random.randint(0, 25)
+# print(num1)
+# print(num2)
+# print(num3)
+# if num1 != num2 and num1 != num3 and num2 != num3:
+#     if num1 > num2 and num1 < num3:
+#         print(num1)
+#     elif num2 > num1 and num2 < num3:
+#         print(num2)
+#     elif num3 > num1 and num3 < num2:
+#         print(num3)
+# else:
+#     print('lygus')
+
+# Įvedami skaičiai - a, b, c –kraštinių ilgiai, trys kintamieji (naudokite random.randint(x,x) funkciją nuo 1 iki 10).
+# Parašykite Python programą, kuri nustatytų, ar galima sudaryti trikampį ir atsakymą atspausdintų.
+
+num1a = random.randint(0, 10)
+num2b = random.randint(0, 10)
+num3c = random.randint(0, 10)
+print(num1a)
+print(num2b)
+print(num3c)
+if num1a > num3c and num2b > num3c:
+    print('trikampisC')
+elif num1a > num2b and num3c > num2b:
+    print('trikampisB')
+elif num2b > num1a and num3c > num1a:
+    print('trikampisA')
+if (num1a > num3c and num2b > num3c) or (num1a > num2b and num3c > num2b) or (num2b > num1a and num3c > num1a):
+    print('trikampis')
 else:
-    print('lygus')
+    print('klaida')
