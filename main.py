@@ -135,17 +135,28 @@ import pathlib
 # elif (vidurkis < 5):
 #     print('vidurkis < 5')
 
-print('prasau parasykite 2 skaicius')
-number1 = int(input())
-number2 = int(input())
+# print('prasau parasykite 2 skaicius')
+# number1 = int(input())
+# number2 = int(input())
+#
+# if (number1 > number2) and (number1 == 0):
+#     print('number1 yra didesnis uz number2 arba =0')
+# if (number2 > number1) and (number2 == 5):
+#     print('number2 yra ura didesnis uz number1 arba =5')
+# if (number1 > number2) and (number1 == 20):
+#     print('number1 yra =20')
+# if (number2 > number1) and (number1 < 100):
+#     print('number2 yra >100')
+# else:
+#     print("message of dissapointment")
 
-if (number1 > number2) and (number1 == 0):
-    print('number1 yra didesnis uz number2 arba =0')
-if (number2 > number1) and (number2 == 5):
-    print('number2 yra ura didesnis uz number1 arba =5')
-if (number1 > number2) and (number1 == 20):
-    print('number1 yra =20')
-if (number2 > number1) and (number1 < 100):
-    print('number2 yra >100')
-else:
-    print("message of dissapointment")
+
+print('prasau parasykite savo varda')
+name = (input())
+print('prasau parasykite savo pavarde')
+surname = (input())
+print('prasau parasykite savo gimimo metus')
+birthYear = int(input())
+age = 2024 - birthYear
+
+print(f' "As esu {name} {surname}. Man yra {age} metai(u)." ')
