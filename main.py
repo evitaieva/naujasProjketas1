@@ -5,6 +5,7 @@
 #
 # print('pradedu rink zaliu staskiukus')
 import pathlib
+import random
 
 # print('hello')
 # print("hello 9/24")
@@ -151,12 +152,52 @@ import pathlib
 #     print("message of dissapointment")
 
 
-print('prasau parasykite savo varda')
-name = (input())
-print('prasau parasykite savo pavarde')
-surname = (input())
-print('prasau parasykite savo gimimo metus')
-birthYear = int(input())
-age = 2024 - birthYear
+# print('prasau parasykite savo varda')
+# name = (input())
+# print('prasau parasykite savo pavarde')
+# surname = (input())
+# print('prasau parasykite savo gimimo metus')
+# birthYear = int(input())
+# age = 2024 - birthYear
+#
+# print(f' "As esu {name} {surname}. Man yra {age} metai(u)." ')
 
-print(f' "As esu {name} {surname}. Man yra {age} metai(u)." ')
+
+
+# random_num1 = random.randint(0,4)
+# random_num2 = random.randint(0,4)
+# random_num1 = 3
+# random_num2 = 3
+# print(random_num1)
+# print(random_num2)
+# if random_num1 > 0  and random_num2 > 0 and random_num1 > random_num2 and random_num1 != random_num2:
+#     print( round(random_num1 / random_num2, 2))
+# elif random_num1 > 0 and random_num2 > 0  and random_num1 < random_num2 and random_num1 != random_num2:
+#     print( round(random_num2 / random_num1, 2))
+# else:
+#     print ('dalyba negalima')
+
+# Sukurkite du kintamuosius ir naudodamiesi funkcija random.randint(x,x)
+# jiems priskirkite atsitiktines reikšmes nuo 0 iki 4. Didesnę reikšmę padalinkite iš
+# mažesnės. Atspausdinkite rezultatą jį suapvalinę iki 2 skaičių po kablelio.
+
+
+
+
+num1 = random.randint(0, 4)
+num2 = random.randint(0, 4)
+num1 = 4
+num2 = 3
+print(num1)
+print(num2)
+#jeigu n1 ir n2 nera nuliai
+if num1 > num2:
+    print(num1 / num2)
+if num2 > num1:
+    print(num2 / num1)
+if num1 > 0 and num2 > 0:
+    print(num2 / num1)
+if num1 == 0 or num2 == 0:
+    print('nulis')
+else:
+    print('nesamone')
