@@ -359,16 +359,21 @@ from http.cookiejar import uppercase_escaped_char
 #     print((num1 + num2)/2)
 
 
-# name = 'Kevin'
-# surname = 'Costner'
+name = 'Kevin'
+surname = 'Costner'
 # if len(name) > len(surname):
 #     print(surname)
 # else:
 #     print(name)
 
-name = 'Kevin'
-surname = 'Costner'
-print(str.upper(name), str.lower(surname))
+
+# print(str.upper(name), str.lower(surname))
+
+
+print(str.upper(name[0]) + str.upper(surname[0]))
+print(str.upper(name[2]) + str.upper(surname[2]))
+print(str.upper(name[3]) + str.upper(surname[3]))
+
 
 
 
