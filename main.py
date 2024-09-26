@@ -234,53 +234,60 @@ import random
 #     print('klaida')
 
 
-# num1 = random.randint(0, 2)
-# num2 = random.randint(0, 2)
-# num3 = random.randint(0, 2)
-# num4 = random.randint(0, 2)
-# print(num1)
-# print(num2)
-# print(num3)
-# print(num4)
-# steb_0 = 0
-# steb_1 = 0
-# steb_2 = 0
-#
-# if num1 == 0:
-#     steb_0 += 1
-# if num2 == 0:
-#     steb_0 += 1
-# if num3 == 0:
-#     steb_0 + 1 + 1
-# if num4 == 0:
-#     print(steb_0 + 1 + 1 + 1)
-#
-#
-# if num1 == 1:
-#     steb_1 + 1
-# if num2 == 1:
-#     steb_1 + 1 + 1
-# if num3 == 1:
-#     steb_1 + 1 + 1
-# if num4 == 1:
-#     print(steb_1 + 1 + 1 + 1)
-#
-# if num1 == 2:
-#     steb_1 + 1
-# if num2 == 2:
-#     steb_1 + 1 + 1
-# if num3 == 2:
-#     steb_1 + 1 + 1
-# if num4 == 2:
-#     print(steb_2 + 1 + 1 + 1)
+num1 = random.randint(0, 2)
+num2 = random.randint(0, 2)
+num3 = random.randint(0, 2)
+num4 = random.randint(0, 2)
 
-#if + elif + else kiekvienam skaitmeniui iš eilės:
-# if num1 == 0:
-#     nuliai += 1
-# elif num1 == 1:
-#     vienetai += 1
-# else:
-#     dvejetai += 1
+print(num1)
+print(num2)
+print(num3)
+print(num4)
+countZeros = 0
+countOnes = 0
+countTwos = 0
+
+if num1 == 0:
+    print("as esu num1 ir esu lygus nuliui")
+    countZeros += 1
+if num2 == 0:
+    print("as esu num2 ir esu lygus nuliui")
+    countZeros += 1
+if num3 == 0:
+    print("as esu num3 ir esu lygus nuliui")
+    countZeros += 1
+if num3 == 0:
+    print("as esu num4 ir esu lygus nuliui")
+    countZeros += 1
+    print("nuliu radau " + str(countZeros))
+
+if num1 == 1:
+    print("as esu num1 ir esu lygus vienetui")
+    countOnes += 1
+if num2 == 1:
+    print("as esu num2 ir esu lygus vienetui")
+    countOnes += 1
+if num3 == 1:
+    print("as esu num3 ir esu lygus vienetui")
+    countOnes += 1
+if num3 == 1:
+    print("as esu num4 ir esu lygus vienetui")
+    countOnes += 1
+    print("vienetu radau " + str(countOnes))
+
+if num1 == 2:
+    print("as esu num1 ir esu lygus dvejetui")
+    countTwos += 1
+if num2 == 2:
+    print("as esu num2 ir esu lygus dvejetui")
+    countTwos += 1
+if num3 == 2:
+    print("as esu num3 ir esu lygus dvejetui")
+    countTwos += 1
+if num3 == 2:
+    print("as esu num4 ir esu lygus dvejetui")
+    countTwos += 1
+print("dvejetu radau " + str(countTwos))
 
 
 
@@ -322,30 +329,53 @@ import random
 #     dvejetai += 1
 
 
-num1 = random.randint(-10, 10)
-num2 = random.randint(-10, 10)
-num3 = random.randint(-10, 10)
-print(num1)
-print(num2)
-print(num3)
+# num1 = random.randint(-10, 10)
+# num2 = random.randint(-10, 10)
+# num3 = random.randint(-10, 10)
+# print(num1)
+# print(num2)
+# print(num3)
+#
+# print("<(" + str(num1) + ")>")
+#
+# if num1 > 0:
+#     print([num1])
+# if num1 == 0:
+#     print((num1))
+# if num1 < 0:
+#     print ({num1})
+#
+# if num2 > 0:
+#     print([num2])
+# if num2 == 0:
+#     print((num2))
+# if num2 < 0:
+#     print ({num2})
+#
+# if num3 > 0:
+#     print([num3])
+# if num3 == 0:
+#     print((num3))
+# if num3 < 0:
+#     print ({num3})
 
-if num1 > 0:
-    print([num1])
-if num1 == 0:
-    print((num1))
-if num1 < 0:
-    print ({num1})
+# Įmonė parduoda žvakes po 1 EUR.
+# Perkant daugiau kaip 1000 vienetų taikoma 3 % nuolaida,
+# daugiau kaip 2000 vienetų- 4 % nuolaida.
+# Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina
+# perkama.
+#
+# Žvakių kiekį generuokite 'random.randint(x,x)' funkcija nuo 5 iki 3000. V
 
-if num2 > 0:
-    print([num2])
-if num2 == 0:
-    print((num2))
-if num2 < 0:
-    print ({num2})
-
-if num3 > 0:
-    print([num3])
-if num3 == 0:
-    print((num3))
-if num3 < 0:
-    print ({num3})
+# print("parafino namai")
+# ZvakiuSkaicius = random.randint(5, 3000)
+# ZvakiuSkaicius = 2114
+# print(ZvakiuSkaicius)
+# kaina = 1
+# if ZvakiuSkaicius < 1000:
+#     print(ZvakiuSkaicius  * kaina)
+# # if ZvakiuSkaicius >= 1000 and ZvakiuSkaicius < 2000:
+# if 1000 < ZvakiuSkaicius < 2000:
+#     print(ZvakiuSkaicius * kaina * 0.97)
+# if ZvakiuSkaicius > 2000:
+#     print(ZvakiuSkaicius * kaina * 0.96)
