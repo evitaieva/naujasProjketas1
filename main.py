@@ -6,6 +6,7 @@
 # print('pradedu rink zaliu staskiukus')
 import pathlib
 import random
+from http.cookiejar import uppercase_escaped_char
 
 # print('hello')
 # print("hello 9/24")
@@ -358,9 +359,17 @@ import random
 #     print((num1 + num2)/2)
 
 
+# name = 'Kevin'
+# surname = 'Costner'
+# if len(name) > len(surname):
+#     print(surname)
+# else:
+#     print(name)
+
 name = 'Kevin'
 surname = 'Costner'
-if len(name) > len(surname):
-    print(surname)
-else:
-    print(name)
+print(str.upper(name), str.lower(surname))
+
+
+
+
