@@ -177,9 +177,6 @@ import random
 # else:
 #     print ('dalyba negalima')
 
-# Sukurkite du kintamuosius ir naudodamiesi funkcija random.randint(x,x)
-# jiems priskirkite atsitiktines reikšmes nuo 0 iki 4. Didesnę reikšmę padalinkite iš
-# mažesnės. Atspausdinkite rezultatą jį suapvalinę iki 2 skaičių po kablelio.
 
 
 
@@ -218,22 +215,137 @@ import random
 # else:
 #     print('lygus')
 
-# Įvedami skaičiai - a, b, c –kraštinių ilgiai, trys kintamieji (naudokite random.randint(x,x) funkciją nuo 1 iki 10).
-# Parašykite Python programą, kuri nustatytų, ar galima sudaryti trikampį ir atsakymą atspausdintų.
 
-num1a = random.randint(0, 10)
-num2b = random.randint(0, 10)
-num3c = random.randint(0, 10)
-print(num1a)
-print(num2b)
-print(num3c)
-if num1a > num3c and num2b > num3c:
-    print('trikampisC')
-elif num1a > num2b and num3c > num2b:
-    print('trikampisB')
-elif num2b > num1a and num3c > num1a:
-    print('trikampisA')
-if (num1a > num3c and num2b > num3c) or (num1a > num2b and num3c > num2b) or (num2b > num1a and num3c > num1a):
-    print('trikampis')
-else:
-    print('klaida')
+# num1a = random.randint(0, 10)
+# num2b = random.randint(0, 10)
+# num3c = random.randint(0, 10)
+# print(num1a)
+# print(num2b)
+# print(num3c)
+# if num1a > num3c and num2b > num3c:
+#     print('trikampisC')
+# elif num1a > num2b and num3c > num2b:
+#     print('trikampisB')
+# elif num2b > num1a and num3c > num1a:
+#     print('trikampisA')
+# if (num1a > num3c and num2b > num3c) or (num1a > num2b and num3c > num2b) or (num2b > num1a and num3c > num1a):
+#     print('trikampis')
+# else:
+#     print('klaida')
+
+
+# num1 = random.randint(0, 2)
+# num2 = random.randint(0, 2)
+# num3 = random.randint(0, 2)
+# num4 = random.randint(0, 2)
+# print(num1)
+# print(num2)
+# print(num3)
+# print(num4)
+# steb_0 = 0
+# steb_1 = 0
+# steb_2 = 0
+#
+# if num1 == 0:
+#     steb_0 += 1
+# if num2 == 0:
+#     steb_0 += 1
+# if num3 == 0:
+#     steb_0 + 1 + 1
+# if num4 == 0:
+#     print(steb_0 + 1 + 1 + 1)
+#
+#
+# if num1 == 1:
+#     steb_1 + 1
+# if num2 == 1:
+#     steb_1 + 1 + 1
+# if num3 == 1:
+#     steb_1 + 1 + 1
+# if num4 == 1:
+#     print(steb_1 + 1 + 1 + 1)
+#
+# if num1 == 2:
+#     steb_1 + 1
+# if num2 == 2:
+#     steb_1 + 1 + 1
+# if num3 == 2:
+#     steb_1 + 1 + 1
+# if num4 == 2:
+#     print(steb_2 + 1 + 1 + 1)
+
+#if + elif + else kiekvienam skaitmeniui iš eilės:
+# if num1 == 0:
+#     nuliai += 1
+# elif num1 == 1:
+#     vienetai += 1
+# else:
+#     dvejetai += 1
+
+
+
+# num1 = random.randint(0, 2)
+# num2 = random.randint(0, 2)
+# num3 = random.randint(0, 2)
+# num4 = random.randint(0, 2)
+# print(num1)
+# print(num2)
+# print(num3)
+# print(num4)
+# steb_0 = 0
+# steb_1 = 0
+# steb_2 = 0
+#
+# if num1 == 0:
+#     nuliai += 1
+# elif num1 == 1:
+#     vienetai += 1
+# else:
+#     dvejetai += 1
+# if num2 == 0:
+#     nuliai += 1
+# elif num2 == 1:
+#     vienetai += 1
+# else:
+#     dvejetai += 1
+# if num3 == 0:
+#     nuliai += 1
+# elif num3 == 1:
+#     vienetai += 1
+# else:
+#     dvejetai += 1
+# if num4 == 0:
+#     nuliai += 1
+# elif num4 == 1:
+#     vienetai += 1
+# else:
+#     dvejetai += 1
+
+
+num1 = random.randint(-10, 10)
+num2 = random.randint(-10, 10)
+num3 = random.randint(-10, 10)
+print(num1)
+print(num2)
+print(num3)
+
+if num1 > 0:
+    print([num1])
+if num1 == 0:
+    print((num1))
+if num1 < 0:
+    print ({num1})
+
+if num2 > 0:
+    print([num2])
+if num2 == 0:
+    print((num2))
+if num2 < 0:
+    print ({num2})
+
+if num3 > 0:
+    print([num3])
+if num3 == 0:
+    print((num3))
+if num3 < 0:
+    print ({num3})
