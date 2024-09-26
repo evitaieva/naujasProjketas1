@@ -291,53 +291,46 @@ import random
 
 
 
-
-num1 = random.randint(-10, 10)
-num2 = random.randint(-10, 10)
-num3 = random.randint(-10, 10)
-print(num1)
-print(num2)
-print(num3)
-
-
-if num1 > 0:
-    print('[' + str(num1) + ']')
-if num1 == 0:
-    print('(' + str(num1) + ')')
-if num1 < 0:
-    print('{' + str(num1) + '}')
-
-if num2 > 0:
-    print('[' + str(num2) + ']')
-if num2 == 0:
-    print('(' + str(num2) + ')')
-if num2 < 0:
-    print('{' + str(num2) + '}')
-
-if num3 > 0:
-    print('[' + str(num3) + ']')
-if num3 == 0:
-    print('(' + str(num2) + ')')
-if num3 < 0:
-    print('{' + str(num3) + '}')
-
-# Įmonė parduoda žvakes po 1 EUR.
-# Perkant daugiau kaip 1000 vienetų taikoma 3 % nuolaida,
-# daugiau kaip 2000 vienetų- 4 % nuolaida.
-# Parašykite programą, kuri skaičiuos žvakių kainą ir atspausdintų atsakymą kiek žvakių ir kokia kaina
-# perkama.
 #
-# Žvakių kiekį generuokite 'random.randint(x,x)' funkcija nuo 5 iki 3000. V
+# num1 = random.randint(-10, 10)
+# num2 = random.randint(-10, 10)
+# num3 = random.randint(-10, 10)
+# print(num1)
+# print(num2)
+# print(num3)
+#
+#
+# if num1 > 0:
+#     print('[' + str(num1) + ']')
+# if num1 == 0:
+#     print('(' + str(num1) + ')')
+# if num1 < 0:
+#     print('{' + str(num1) + '}')
+#
+# if num2 > 0:
+#     print('[' + str(num2) + ']')
+# if num2 == 0:
+#     print('(' + str(num2) + ')')
+# if num2 < 0:
+#     print('{' + str(num2) + '}')
+#
+# if num3 > 0:
+#     print('[' + str(num3) + ']')
+# if num3 == 0:
+#     print('(' + str(num2) + ')')
+# if num3 < 0:
+#     print('{' + str(num3) + '}')
 
-# print("parafino namai")
-# ZvakiuSkaicius = random.randint(5, 3000)
-# ZvakiuSkaicius = 2114
-# print(ZvakiuSkaicius)
-# kaina = 1
-# if ZvakiuSkaicius < 1000:
-#     print(ZvakiuSkaicius  * kaina)
-# # if ZvakiuSkaicius >= 1000 and ZvakiuSkaicius < 2000:
-# if 1000 < ZvakiuSkaicius < 2000:
-#     print(ZvakiuSkaicius * kaina * 0.97)
-# if ZvakiuSkaicius > 2000:
-#     print(ZvakiuSkaicius * kaina * 0.96)
+
+print("parafino namai")
+ZvakiuSkaicius = random.randint(5, 3000)
+ZvakiuSkaicius = 2114
+print(ZvakiuSkaicius)
+kaina = 1
+if ZvakiuSkaicius < 1000:
+    print(ZvakiuSkaicius  * kaina)
+# if ZvakiuSkaicius >= 1000 and ZvakiuSkaicius < 2000:
+if 1000 < ZvakiuSkaicius < 2000:
+    print(ZvakiuSkaicius * kaina * 0.97)
+if ZvakiuSkaicius > 2000:
+    print(ZvakiuSkaicius * kaina * 0.96)
