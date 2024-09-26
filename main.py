@@ -322,15 +322,40 @@ import random
 #     print('{' + str(num3) + '}')
 
 
-print("parafino namai")
-ZvakiuSkaicius = random.randint(5, 3000)
-ZvakiuSkaicius = 2114
-print(ZvakiuSkaicius)
-kaina = 1
-if ZvakiuSkaicius < 1000:
-    print(ZvakiuSkaicius  * kaina)
-# if ZvakiuSkaicius >= 1000 and ZvakiuSkaicius < 2000:
-if 1000 < ZvakiuSkaicius < 2000:
-    print(ZvakiuSkaicius * kaina * 0.97)
-if ZvakiuSkaicius > 2000:
-    print(ZvakiuSkaicius * kaina * 0.96)
+# print("parafino namai")
+# ZvakiuSkaicius = random.randint(5, 3000)
+# ZvakiuSkaicius = 2114
+# print(ZvakiuSkaicius)
+# kaina = 1
+# if ZvakiuSkaicius < 1000:
+#     print(ZvakiuSkaicius  * kaina)
+# # if ZvakiuSkaicius >= 1000 and ZvakiuSkaicius < 2000:
+# if 1000 < ZvakiuSkaicius < 2000:
+#     print(ZvakiuSkaicius * kaina * 0.97)
+# if ZvakiuSkaicius > 2000:
+#     print(ZvakiuSkaicius * kaina * 0.96)
+
+
+
+num1 = random.randint(0, 100)
+num2 = random.randint(0, 100)
+num3 = random.randint(0, 100)
+print(num1)
+print(num2)
+print(num3)
+
+print(round((num1 + num2 + num3)/3))
+
+if num1 < 10:
+    print((num2 + num3) / 2)
+if num1 > 90:
+    print((num2 + num3)/2)
+if num2 < 10:
+    print((num1 + num3) / 2)
+if num2 > 90:
+    print((num1 + num3)/2)
+if num3 < 10:
+    print((num1 + num2) / 2)
+if num3 > 90:
+    print((num1 + num2)/2)
+
