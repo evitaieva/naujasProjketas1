@@ -399,7 +399,16 @@ from http.cookiejar import uppercase_escaped_char
 #
 # print(vowel_free_phrase)
 
-phrase = "Breakfast at Tiffany's"
+# phrase = "Breakfast at Tiffany's"
+# vowel_free_phrase = ''
+# for char in phrase:
+#     if char not in 'aeiouAEIOU':
+#         vowel_free_phrase += char
+#
+# print(vowel_free_phrase)
+
+
+phrase = "2001: A Space Odyssey"
 vowel_free_phrase = ''
 for char in phrase:
     if char not in 'aeiouAEIOU':
