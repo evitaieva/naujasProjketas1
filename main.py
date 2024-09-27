@@ -391,7 +391,15 @@ from http.cookiejar import uppercase_escaped_char
 #
 # print("\n After removing Vowels:", result)
 
-phrase = 'An American in Paris'
+# phrase = 'An American in Paris'
+# vowel_free_phrase = ''
+# for char in phrase:
+#     if char not in 'aeiouAEIOU':
+#         vowel_free_phrase += char
+#
+# print(vowel_free_phrase)
+
+phrase = "Breakfast at Tiffany's"
 vowel_free_phrase = ''
 for char in phrase:
     if char not in 'aeiouAEIOU':
