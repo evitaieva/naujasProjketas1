@@ -373,14 +373,28 @@ from http.cookiejar import uppercase_escaped_char
 # print(str.upper(name[3]) + str.upper(surname[3]))
 
 
-fraze ='An American in Paris'
-# updateFraze = fraze.replace('a' or 'A', '*') #lawer pasikeicia#
-updateFraze = fraze.replace('a' and 'A', '*') #upper pasikeicia#
-print(updateFraze)
+# fraze ='An American in Paris'
+# # updateFraze = fraze.replace('a' or 'A', '*') #lawer pasikeicia#
+# updateFraze = fraze.replace('a' and 'A', '*') #upper pasikeicia#
+# print(updateFraze)
+#
+# updateFraze = {"a": "*", "A": "*"}
+# print(updateFraze)
 
-updateFraze = {"a": "*", "A": "*"}
-print(updateFraze)
+# Sukurti kintamąjį su stringu: "An American in Paris".
+# Jame ištrinti visas balses. Rezultatą atspausdinti. Kodą
+# pakartoti su stringais: "Breakfast at Tiffany's", "2001: A Space Odyssey" ir "It's a Wonderful Life".
 
+# fraze ='An American in Paris'
+# vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
+# result  = ''
+#
+# print("\n After removing Vowels:", result)
 
+phrase = 'An American in Paris'
+vowel_free_phrase = ''
+for char in phrase:
+    if char not in 'aeiouAEIOU':
+        vowel_free_phrase += char
 
-
+print(vowel_free_phrase)
