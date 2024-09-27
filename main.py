@@ -374,9 +374,13 @@ from http.cookiejar import uppercase_escaped_char
 
 
 fraze ='An American in Paris'
-updateFraze = fraze.replace('a' or 'A', '*')
-updateFraze = fraze.replace('a' and 'A', '*')
+# updateFraze = fraze.replace('a' or 'A', '*') #lawer pasikeicia#
+updateFraze = fraze.replace('a' and 'A', '*') #upper pasikeicia#
 print(updateFraze)
+
+updateFraze = {"a": "*", "A": "*"}
+print(updateFraze)
+
 
 
 
