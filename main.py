@@ -381,9 +381,11 @@ from http.cookiejar import uppercase_escaped_char
 # updateFraze = {"a": "*", "A": "*"}
 # print(updateFraze)
 
-fraze = 'An American in Paris'
-updateFraze = fraze.replace("a", "").replace("A", "")
-print(updateFraze)
+# fraze = 'An American in Paris'
+# updateFraze = fraze.replace("a", "").replace("A", "")
+# print(updateFraze)
+
+
 
 
 
