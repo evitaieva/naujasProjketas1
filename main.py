@@ -6,6 +6,7 @@
 # print('pradedu rink zaliu staskiukus')
 import pathlib
 import random
+import re
 from http.cookiejar import uppercase_escaped_char
 
 # print('hello')
@@ -385,6 +386,9 @@ from http.cookiejar import uppercase_escaped_char
 # updateFraze = fraze.replace("a", "").replace("A", "")
 # print(updateFraze)
 
+s = 'An American in Paris'
+replaced = re.sub('[aA]', '*', s)
+print(replaced)
 
 
 
