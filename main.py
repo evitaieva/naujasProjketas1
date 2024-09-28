@@ -381,6 +381,10 @@ from http.cookiejar import uppercase_escaped_char
 # updateFraze = {"a": "*", "A": "*"}
 # print(updateFraze)
 
+fraze = 'An American in Paris'
+updateFraze = fraze.replace("a", "").replace("A", "")
+print(updateFraze)
+
 
 
 # fraze ='An American in Paris'
@@ -414,10 +418,13 @@ from http.cookiejar import uppercase_escaped_char
 #
 # print(vowel_free_phrase)
 
-phrase = "It's a Wonderful Life"
-vowel_free_phrase = ''
-for char in phrase:
-    if char not in 'aeiouAEIOU':
-        vowel_free_phrase += char
+# phrase = "It's a Wonderful Life"
+# vowel_free_phrase = ''
+# for char in phrase:
+#     if char not in 'aeiouAEIOU':
+#         vowel_free_phrase += char
+#
+# print(vowel_free_phrase)
 
-print(vowel_free_phrase)
+
+# starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + " - A New Hope"
