@@ -386,11 +386,9 @@ from http.cookiejar import uppercase_escaped_char
 # updateFraze = fraze.replace("a", "").replace("A", "")
 # print(updateFraze)
 
-s = 'An American in Paris'
-replaced = re.sub('[aA]', '*', s)
-print(replaced)
-
-
+# s = 'An American in Paris'
+# replaced = re.sub('[aA]', '*', s)
+# print(replaced)
 
 
 # fraze ='An American in Paris'
@@ -434,3 +432,15 @@ print(replaced)
 
 
 # starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + " - A New Hope"
+
+
+print('labas rytas')
+labas= input()
+print('kuri siandien diena?')
+diena= input()
+print('ar isgerei vitaminus?')
+vitaminai= input()
+if vitaminai == 'taip':
+    print('grazios dienos Princess')
+if vitaminai == 'ne':
+    print('mars isgerti vitaminu')
