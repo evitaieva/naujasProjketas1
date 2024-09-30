@@ -520,9 +520,18 @@ from http.cookiejar import uppercase_escaped_char
 # Sukurkite list su pasirinktais duomenimis. Patikrinkite ar sąraše yra
 # daugiau nei 5 įrašai ir jeigu taip - jį išvalykite (clear funkcija).
 
+# apygarda = ['Puodziu', 'Zilinu', 'Dubiciu', 'Panociu', 'Kabeliu', 'Marcinkoniu','Kruminiu','Matuizu']
+# print(apygarda)
+# apygarda.pop(5)
+# print(apygarda)
+# apygarda.clear()
+# print(apygarda)
+
+# Sukurkite list, kuriame būtų surašyti bet kokie žodžiai. Leiskite vartotojui
+# atlikti paiešką tame sąraše - vartotojas įvestų norimą žodį ir programa
+# pasakytų ar tame sąraše tas žodis yra ir jeigu yra, tai kurioje vietoje.
+
 apygarda = ['Puodziu', 'Zilinu', 'Dubiciu', 'Panociu', 'Kabeliu', 'Marcinkoniu','Kruminiu','Matuizu']
 print(apygarda)
-apygarda.pop(5)
-print(apygarda)
-apygarda.clear()
-print(apygarda)
+# print(apygarda.index('Alytus'))
+print(apygarda.index('Dubiciu'))
