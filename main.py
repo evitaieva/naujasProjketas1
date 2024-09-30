@@ -454,10 +454,10 @@ from http.cookiejar import uppercase_escaped_char
 # epizodo_numeris = re.sub("Star Wars: Episode  | - A New Hope", "", starWars)
 # print(epizodo_nr)
 
-starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + " - A New Hope"
-print(starWars)
-print(starWars[-14:-13])
-print(re.sub(r'\D+', '', starWars ))
+# starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + " - A New Hope"
+# print(starWars)
+# print(starWars[-14:-13])
+# print(re.sub(r'\D+', '', starWars ))
 
 # Susikurkite list vardams saugoti ir užpildykite jį informacija. Išveskite visą
 # šį list, tuomet pirmą narį iš jo, paskutinį narį, bei kiek narių jame yra.
@@ -471,3 +471,9 @@ print(re.sub(r'\D+', '', starWars ))
 
 # Susikurkite list žmonių ūgiams saugoti ir užpildykite jį informacija.
 # Išveskite viso šio list duomenis bei kiek ūgių turite.
+
+ugis = [169, 170, 215, 198, 154, 210, 214]
+
+print('ugiu sarasas:', ugis)
+print('ugis:', len(ugis))
+print('ugiu skaicius:',  len(ugis)-1)
