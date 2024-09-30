@@ -489,3 +489,4 @@ suma = pazimys[0] + pazimys[1] +pazimys[2] +pazimys[3] +pazimys[4] +pazimys[5] +
 print (suma)
 vidurkis = suma / len(pazimys)
 print('pazymiu vidurkis:', vidurkis)
+print('pazimiu vidurkis:', round(vidurkis, 2))
