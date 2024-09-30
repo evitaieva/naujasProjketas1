@@ -485,3 +485,7 @@ from http.cookiejar import uppercase_escaped_char
 pazimys = [10,7,9,8,9,8,8]
 print(pazimys)
 print('pazymiu skaicius:',  len(pazimys))
+suma = pazimys[0] + pazimys[1] +pazimys[2] +pazimys[3] +pazimys[4] +pazimys[5] +pazimys[6]
+print (suma)
+vidurkis = suma / len(pazimys)
+print('pazymiu vidurkis:', vidurkis)
