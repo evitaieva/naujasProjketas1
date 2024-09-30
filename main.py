@@ -496,12 +496,23 @@ from http.cookiejar import uppercase_escaped_char
 # tiek papildytą duomenimis. Pamėginkite papildyti programą, kad
 # vartotojas galėtų pasirinkti į kurią list vietą būtų įrašytas naujas miestas.
 
-city = ['Alytus', 'Klaipeda','Vilnius','Telsiai','Raseiniai','Kaunas']
-print(city)
-city.append('Marijampole')
-city.append('Zarasai')
-print(city)
-city.insert(1, 'Marijampole')
-print(city)
+# city = ['Alytus', 'Klaipeda','Vilnius','Telsiai','Raseiniai','Kaunas']
+# print(city)
+# city.append('Marijampole')
+# city.append('Zarasai')
+# print(city)
+# city.insert(1, 'Marijampole')
+# print(city)
 
+# Sukurkite pasirinktą list ir užpildykite jį duomenimis. Iš jo pašalinkite
+# keletą įrašų, tiesiog parašant pop() funkciją. Taip pat, sukurkite, kad
+# vartotojas galėtų pasirinkti kiek dar duomenų pašalinti ir pašalinkite iš list
+# pasirinktą kiekį įrašų.
 
+apygarda = ['Puodziu', 'Zilinu', 'Dubiciu', 'Panociu', 'Kabeliu', 'Marcinkoniu','Kruminiu','Matuizu']
+print(apygarda)
+apygarda.pop()
+print(apygarda)
+apygarda.pop(0)
+apygarda.pop(5)
+print(apygarda)
