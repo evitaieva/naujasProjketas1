@@ -509,10 +509,20 @@ from http.cookiejar import uppercase_escaped_char
 # vartotojas galėtų pasirinkti kiek dar duomenų pašalinti ir pašalinkite iš list
 # pasirinktą kiekį įrašų.
 
+# apygarda = ['Puodziu', 'Zilinu', 'Dubiciu', 'Panociu', 'Kabeliu', 'Marcinkoniu','Kruminiu','Matuizu']
+# print(apygarda)
+# apygarda.pop()
+# print(apygarda)
+# apygarda.pop(0)
+# apygarda.pop(5)
+# print(apygarda)
+
+# Sukurkite list su pasirinktais duomenimis. Patikrinkite ar sąraše yra
+# daugiau nei 5 įrašai ir jeigu taip - jį išvalykite (clear funkcija).
+
 apygarda = ['Puodziu', 'Zilinu', 'Dubiciu', 'Panociu', 'Kabeliu', 'Marcinkoniu','Kruminiu','Matuizu']
 print(apygarda)
-apygarda.pop()
-print(apygarda)
-apygarda.pop(0)
 apygarda.pop(5)
+print(apygarda)
+apygarda.clear()
 print(apygarda)
