@@ -472,8 +472,16 @@ from http.cookiejar import uppercase_escaped_char
 # Susikurkite list žmonių ūgiams saugoti ir užpildykite jį informacija.
 # Išveskite viso šio list duomenis bei kiek ūgių turite.
 
-ugis = [169, 170, 215, 198, 154, 210, 214]
+# ugis = [169, 170, 215, 198, 154, 210, 214]
+#
+# print('ugiu sarasas:', ugis)
+# print('ugis:', len(ugis))
+# print('ugiu skaicius:',  len(ugis))
 
-print('ugiu sarasas:', ugis)
-print('ugis:', len(ugis))
-print('ugiu skaicius:',  len(ugis)-1)
+# Susikurkite list pažymiams saugoti. Pamėginkite sukurti programą, kur
+# vartotojas galėtų suvesti norimą kiekį naujų duomenų. Galiausiai išveskite
+# visus pažymius ir jų kiekį.
+
+pazimys = [10,7,9,8,9,8,8]
+print(pazimys)
+print('pazymiu skaicius:',  len(pazimys))
