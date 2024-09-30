@@ -482,11 +482,26 @@ from http.cookiejar import uppercase_escaped_char
 # vartotojas galėtų suvesti norimą kiekį naujų duomenų. Galiausiai išveskite
 # visus pažymius ir jų kiekį.
 
-pazimys = [10,7,9,8,9,8,8]
-print(pazimys)
-print('pazymiu skaicius:',  len(pazimys))
-suma = pazimys[0] + pazimys[1] +pazimys[2] +pazimys[3] +pazimys[4] +pazimys[5] +pazimys[6]
-print (suma)
-vidurkis = suma / len(pazimys)
-print('pazymiu vidurkis:', vidurkis)
-print('pazimiu vidurkis:', round(vidurkis, 2))
+# pazimys = [10,7,9,8,9,8,8]
+# print(pazimys)
+# print('pazymiu skaicius:',  len(pazimys))
+# suma = pazimys[0] + pazimys[1] +pazimys[2] +pazimys[3] +pazimys[4] +pazimys[5] +pazimys[6]
+# print (suma)
+# vidurkis = suma / len(pazimys)
+# print('pazymiu vidurkis:', vidurkis)
+# print('pazimiu vidurkis:', round(vidurkis, 2))
+
+# Susikurkite miestų sąrašą. Į šį list pridėkite duomenų kurdami patį list.
+# Toliau sukurkite galimybę vartotojui papildyti list. Išveskite tiek pradinį list,
+# tiek papildytą duomenimis. Pamėginkite papildyti programą, kad
+# vartotojas galėtų pasirinkti į kurią list vietą būtų įrašytas naujas miestas.
+
+city = ['Alytus', 'Klaipeda','Vilnius','Telsiai','Raseiniai','Kaunas']
+print(city)
+city.append('Marijampole')
+city.append('Zarasai')
+print(city)
+city.insert(1, 'Marijampole')
+print(city)
+
+
