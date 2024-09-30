@@ -444,3 +444,12 @@ from http.cookiejar import uppercase_escaped_char
 
 starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + " - A New Hope"
 print(starWars)
+regex2 = re.findall("Star Wars: Episode", starWars)
+print(regex2)
+
+epizodas = re.sub("Star Wars: Episode", "",  starWars)
+print(epizodas)
+epizodo_nr  = re.sub("- A New Hope", "", epizodas)
+print(epizodo_nr)
+epizodo_numeris = re.sub("Star Wars: Episode  | - A New Hope", "", starWars)
+print(epizodo_nr)
