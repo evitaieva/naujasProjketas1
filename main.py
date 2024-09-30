@@ -454,13 +454,20 @@ from http.cookiejar import uppercase_escaped_char
 # epizodo_numeris = re.sub("Star Wars: Episode  | - A New Hope", "", starWars)
 # print(epizodo_nr)
 
+starWars = "Star Wars: Episode " + (" " * random.randint(1, 9)) + str(random.randint(1, 7)) + " - A New Hope"
+print(starWars)
+print(starWars[-14:-13])
+print(re.sub(r'\D+', '', starWars ))
 
 # Susikurkite list vardams saugoti ir užpildykite jį informacija. Išveskite visą
 # šį list, tuomet pirmą narį iš jo, paskutinį narį, bei kiek narių jame yra.
 
-vardai = ['Asta', 'Naglis', 'Regimantas', 'Augustinas', 'Teresa', 'Darius', 'Arina', 'Gintaras', 'Monika', 'Alina',]
-# print(vardai [0])
-# print(vardai [5])
-print('pirmas vardas sarase:', vardai [0])
-print('nariu skaicius:', len(vardai))
-print('paskutinis vardas sarase:',  vardai[len(vardai)-1])
+# vardai = ['Asta', 'Naglis', 'Regimantas', 'Augustinas', 'Teresa', 'Darius', 'Arina', 'Gintaras', 'Monika', 'Alina',]
+# # print(vardai [0])
+# # print(vardai [5])
+# print('pirmas vardas sarase:', vardai [0])
+# print('nariu skaicius:', len(vardai))
+# print('paskutinis vardas sarase:',  vardai[len(vardai)-1])
+
+# Susikurkite list žmonių ūgiams saugoti ir užpildykite jį informacija.
+# Išveskite viso šio list duomenis bei kiek ūgių turite.
