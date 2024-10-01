@@ -564,10 +564,18 @@ from itertools import count
 # tris didžiausius turimus pažymius.
 
 
+# studentuPazymiai = [10,6,7,8,4,8,3,10,10,4]
+# print(studentuPazymiai)
+# studentuPazymiai.sort()
+# print(studentuPazymiai)
+# studentuPazymiai.reverse()
+# print(studentuPazymiai)
+# print(studentuPazymiai [:3])
+
+# Susikurkite studentų pažymių sąrašą ir užpildykite duomenimis. Jeigu
+# studentas turi neigiamų pažymių (1, 2, 3, arba 4), išveskite kiek tokių
+# pažymių jis turi.
+
 studentuPazymiai = [10,6,7,8,4,8,3,10,10,4]
-print(studentuPazymiai)
-studentuPazymiai.sort()
-print(studentuPazymiai)
-studentuPazymiai.reverse()
-print(studentuPazymiai)
-print(studentuPazymiai [:3])
+
+print(studentuPazymiai.count(1) + studentuPazymiai.count(2) + studentuPazymiai.count(3) + studentuPazymiai.count(4))
