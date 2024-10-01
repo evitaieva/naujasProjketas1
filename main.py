@@ -8,6 +8,7 @@ import pathlib
 import random
 import re
 from itertools import count
+from traceback import print_list
 
 # print('hello')
 # print("hello 9/24")
@@ -600,11 +601,26 @@ from itertools import count
 # Susikurkite list studentų vidurkiams saugoti. Išsitraukite ir pasidėkite į
 # atskirą list tris didžiausius pažymius (galite surikiuoti ir išsikirpti ką reikia).
 
-vidurkis = [4.5, 6.7, 8, 10, 6.9, 8.9]
-print(vidurkis)
-vidurkis.sort()
-print(vidurkis)
-vidurkis.reverse()
-print(vidurkis)
-print(vidurkis [:3])
+# vidurkis = [4.5, 6.7, 8, 10, 6.9, 8.9]
+# print(vidurkis)
+# vidurkis.sort()
+# print(vidurkis)
+# vidurkis.reverse()
+# print(vidurkis)
+# print(vidurkis [:3])
+
+# Pamėginkite sukurti žodžių žodyną. Šį žodyną turėtų užpildyti vartotojas,
+# įvesdamas visus norimus žodžius. Po kiekvieno įvedimo jam turėtų būti
+# parodomi visi žodžiai, tačiau surikiuoti, t.y. įdėjus žodį į sąrašą, jį
+# surikiuokite iš naujo.
+auksoZodziai = ['Alaninas', 'Kabala','Piala', 'Marsala', 'Kupala']
+print(auksoZodziai)
+
+
+kopija = auksoZodziai[:]
+print(kopija)
+auksoZodziai[0] = 'naujas'
+print(auksoZodziai)
+print(kopija)
+
 
