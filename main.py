@@ -531,7 +531,21 @@ from http.cookiejar import uppercase_escaped_char
 # atlikti paiešką tame sąraše - vartotojas įvestų norimą žodį ir programa
 # pasakytų ar tame sąraše tas žodis yra ir jeigu yra, tai kurioje vietoje.
 
-apygarda = ['Puodziu', 'Zilinu', 'Dubiciu', 'Panociu', 'Kabeliu', 'Marcinkoniu','Kruminiu','Matuizu']
-print(apygarda)
-# print(apygarda.index('Alytus'))
-print(apygarda.index('Dubiciu'))
+# apygarda = ['Puodziu', 'Zilinu', 'Dubiciu', 'Panociu', 'Kabeliu', 'Marcinkoniu','Kruminiu','Matuizu']
+# print(apygarda)
+# print('Alytus' in apygarda)
+# print(apygarda.index('Dubiciu'))
+
+# Sukurkite sąrašą, kuriame būtų surašyti studentų pažymiai. Galite
+# padaryti taip, kad pasirinktą kiekį pažymių galėtų suvesti pats vartotojas.
+# Programa turi pasakyti kiek dešimtukų studentas turi.
+studentuPazymiai = [10,6,7,8,4,8,3,10,10,4]
+print(studentuPazymiai)
+# print(studentuPazymiai.index(10))
+print(studentuPazymiai.index(10,0,10))
+print(studentuPazymiai.count(10))
+
+
+
+
+
