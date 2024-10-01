@@ -552,13 +552,22 @@ from itertools import count
 # išveskite.
 # Taip pat, surikiuokite mažėjimo tvarka ir išveskite.
 
-marke = ['BMW', 'Opel', 'Volo','Audi', 'Porshe', 'Mercedes', 'Volswagen']
-print(marke)
-print(len(marke))
-marke.sort()
-print(marke)
-marke.reverse()
-print(marke)
+# marke = ['BMW', 'Opel', 'Volo','Audi', 'Porshe', 'Mercedes', 'Volswagen']
+# # print(marke)
+# # print(len(marke))
+# # marke.sort()
+# # print(marke)
+# # marke.reverse()
+# # print(marke)
+
+# Susikurkite studento pažymių sąrašą ir užpildykite duomenimis. Išveskite
+# tris didžiausius turimus pažymius.
 
 
-
+studentuPazymiai = [10,6,7,8,4,8,3,10,10,4]
+print(studentuPazymiai)
+studentuPazymiai.sort()
+print(studentuPazymiai)
+studentuPazymiai.reverse()
+print(studentuPazymiai)
+print(studentuPazymiai [:3])
