@@ -576,6 +576,23 @@ from itertools import count
 # studentas turi neigiamų pažymių (1, 2, 3, arba 4), išveskite kiek tokių
 # pažymių jis turi.
 
-studentuPazymiai = [10,6,7,8,4,8,3,10,10,4]
+# studentuPazymiai = [10,6,7,8,4,8,3,10,10,4]
+#
+# print(studentuPazymiai.count(1) + studentuPazymiai.count(2) + studentuPazymiai.count(3) + studentuPazymiai.count(4))
 
-print(studentuPazymiai.count(1) + studentuPazymiai.count(2) + studentuPazymiai.count(3) + studentuPazymiai.count(4))
+# Susikurkite pasirinktą sąrašą su duomenimis. Pritaikykite list slicing tokiais
+# būdais ir gautus atsakymus išveskite:
+# 1. Paimkite pirmus tris narius.
+# 2. Paimkite du narius, pradedant trečiu.
+# 3. Paimkite paskutinius keturis narius.
+# 4. Paimkite kas antrą narį, pradedant trečiu nariu.
+# 5. Paimkite visus atbuline tvarka.
+
+apygarda = ['Puodziu', 'Zilinu', 'Dubiciu', 'Panociu', 'Kabeliu', 'Marcinkoniu','Kruminiu','Matuizu']
+print(apygarda)
+print(apygarda [:3])
+print(apygarda [3:5])
+print(apygarda [4:])
+print(apygarda [3::2])
+apygarda.reverse()
+print(apygarda)
