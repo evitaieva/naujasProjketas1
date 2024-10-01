@@ -613,14 +613,25 @@ from traceback import print_list
 # įvesdamas visus norimus žodžius. Po kiekvieno įvedimo jam turėtų būti
 # parodomi visi žodžiai, tačiau surikiuoti, t.y. įdėjus žodį į sąrašą, jį
 # surikiuokite iš naujo.
-auksoZodziai = ['Alaninas', 'Kabala','Piala', 'Marsala', 'Kupala']
-print(auksoZodziai)
+# auksoZodziai = ['Alaninas', 'Kabala','Piala', 'Marsala', 'Kupala']
+# print(auksoZodziai)
+#
+#
+# kopija = auksoZodziai[:]
+# print(kopija)
+# auksoZodziai[0] = 'naujas'
+# print(auksoZodziai)
+# print(kopija)
+
+# Sukurkite sąrašą, kuriame saugotumėte sandėlio likučius. Į atskirą sąrašą
+# persikelkite visus likučius kurių lieka mažai (mažiau nei 5 vnt. arba trijų
+# prekių likučius, kurių likę mažiausiai). - NEPADARYTA
+
+# Su for pagalba penkis kartus išveskite savo vardą.
+for sk in range(5):
+    print('Evita')
 
 
-kopija = auksoZodziai[:]
-print(kopija)
-auksoZodziai[0] = 'naujas'
-print(auksoZodziai)
-print(kopija)
+
 
 
