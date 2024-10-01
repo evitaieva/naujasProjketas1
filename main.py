@@ -637,6 +637,11 @@ from traceback import print_list
 
 # Parašyti for, kuris išvestų kas antrą skaičių pradedant 0 ir baigiant 15.
 
-for sk in range(0, 16,2):
-    print('Evita' + str(sk))
+# for sk in range(0, 16,2):
+#     print('Evita' + str(sk))
 
+# Parašyti for, kuris išvestų kas trečią skaičių, pradedant 1 ir baigiant 20.
+# Kiekvieną skaičių apskliausti laužtiniais skliaustais. Pvz.: [1][4][7]...
+
+for sk in range(1, 20,3):
+    print('Evita' + str([sk]))
