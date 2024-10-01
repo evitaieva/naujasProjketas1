@@ -643,5 +643,15 @@ from traceback import print_list
 # Parašyti for, kuris išvestų kas trečią skaičių, pradedant 1 ir baigiant 20.
 # Kiekvieną skaičių apskliausti laužtiniais skliaustais. Pvz.: [1][4][7]...
 
-for sk in range(1, 20,3):
-    print('Evita' + str([sk]))
+# for sk in range(1, 20,3):
+#     print('Evita' + str([sk]))
+
+# Parašyti for, kuris eitų pro kiekvieną skaičių nuo 1 iki 20. Jame apsirašyti if
+# sąlygą, kuri patikrintų ar dabartinis skaičius dalinasi iš 4, jei taip tai šį
+# skaičių išvesti.
+
+for sk in range(1, 20):
+    if sk % 4 ==0:
+        print('dalinasi is 4' + '-' + str(sk))
+    else:
+        print('nesidalinas')
