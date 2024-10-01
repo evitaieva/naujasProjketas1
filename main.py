@@ -662,8 +662,28 @@ from traceback import print_list
 # 2 - lyginis
 # 3 - nelyginis
 
-for skaicius in range(1, 16):
-    if skaicius % 2==0:
-        print(f'skaicius {skaicius} yra lyginis')
-    else:
-        print(f'skaicius {skaicius} yra nelyginis')
+# for skaicius in range(1, 16):
+#     if skaicius % 2==0:
+#         print(f'skaicius {skaicius} yra lyginis')
+#     else:
+#         print(f'skaicius {skaicius} yra nelyginis')
+
+# Susikurkite kintamuosius rėžių pradžiai ir pabaigai nusakyti. Patikrinkite,
+# kad tai būtų validu (pradžia turi būti mažesnė nei pabaiga). Jei rėžiai
+# tinkami, tuomet vykdyti for, kuris atskirose eilutėse išvestų kiekvieną
+# skaičių iš tų rėžių, bei atskiriant tarpu - tų skaičių kvadratus.
+
+for skaicius in range(1,9):
+   print(skaicius * skaicius)
+
+
+
+
+# kazkiek = 9
+# for i in range(kazkiek):
+#     print(i)
+#
+# pradzia = 3
+# pabaiga = 8
+# for i in range(pradzia, pabaiga + 1):
+#     print(f'kazkiek {i}')
