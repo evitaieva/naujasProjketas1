@@ -632,10 +632,11 @@ from traceback import print_list
 #     print('Evita')
 
 # Parašyti for, kuris išvestų kiekvieną skaičių pradedant nuo 0 ir baigiant 10.
-for sk in range(11):
+# for sk in range(11):
+#     print('Evita' + str(sk))
+
+# Parašyti for, kuris išvestų kas antrą skaičių pradedant 0 ir baigiant 15.
+
+for sk in range(0, 16,2):
     print('Evita' + str(sk))
-
-
-
-
 
