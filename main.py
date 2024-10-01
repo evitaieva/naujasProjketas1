@@ -7,7 +7,7 @@
 import pathlib
 import random
 import re
-from http.cookiejar import uppercase_escaped_char
+from itertools import count
 
 # print('hello')
 # print("hello 9/24")
@@ -539,13 +539,26 @@ from http.cookiejar import uppercase_escaped_char
 # Sukurkite sąrašą, kuriame būtų surašyti studentų pažymiai. Galite
 # padaryti taip, kad pasirinktą kiekį pažymių galėtų suvesti pats vartotojas.
 # Programa turi pasakyti kiek dešimtukų studentas turi.
-studentuPazymiai = [10,6,7,8,4,8,3,10,10,4]
-print(studentuPazymiai)
-# print(studentuPazymiai.index(10))
-print(studentuPazymiai.index(10,0,10))
-print(studentuPazymiai.count(10))
+# studentuPazymiai = [10,6,7,8,4,8,3,10,10,4]
+# print(studentuPazymiai)
+# # print(studentuPazymiai.index(10))
+# print(studentuPazymiai.index(10,0,10))
+# print(studentuPazymiai.count(10))
 
+# Susikurkite automobilių markių sąrašą ir užpildykite jį duomenimis
+# (kuriantis sąrašą arba su vartotojo įvestimi). Išveskite turimus duomenis
+# ekrane.
+# Tuomet surikiuokite automobilių markes didėjimo tvarka ir
+# išveskite.
+# Taip pat, surikiuokite mažėjimo tvarka ir išveskite.
 
+marke = ['BMW', 'Opel', 'Volo','Audi', 'Porshe', 'Mercedes', 'Volswagen']
+print(marke)
+print(len(marke))
+marke.sort()
+print(marke)
+marke.reverse()
+print(marke)
 
 
 
