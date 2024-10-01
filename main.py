@@ -628,8 +628,12 @@ from traceback import print_list
 # prekių likučius, kurių likę mažiausiai). - NEPADARYTA
 
 # Su for pagalba penkis kartus išveskite savo vardą.
-for sk in range(5):
-    print('Evita')
+# for sk in range(5):
+#     print('Evita')
+
+# Parašyti for, kuris išvestų kiekvieną skaičių pradedant nuo 0 ir baigiant 10.
+for sk in range(11):
+    print('Evita' + str(sk))
 
 
 
