@@ -650,8 +650,20 @@ from traceback import print_list
 # sąlygą, kuri patikrintų ar dabartinis skaičius dalinasi iš 4, jei taip tai šį
 # skaičių išvesti.
 
-for sk in range(1, 20):
-    if sk % 4 ==0:
-        print('dalinasi is 4' + '-' + str(sk))
+# for sk in range(1, 20):
+#     if sk % 4 ==0:
+#         print('dalinasi is 4' + '-' + str(sk))
+#     else:
+#         print('nesidalinas')
+
+# Išveskite visus skaičius nuo 1 iki 15, prie kiekvieno jų nurodant tai lyginis
+# ar nelyginis skaičius. Pvz:
+# 1 - nelyginis
+# 2 - lyginis
+# 3 - nelyginis
+
+for skaicius in range(1, 16):
+    if skaicius % 2==0:
+        print(f'skaicius {skaicius} yra lyginis')
     else:
-        print('nesidalinas')
+        print(f'skaicius {skaicius} yra nelyginis')
