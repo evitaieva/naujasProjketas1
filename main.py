@@ -588,11 +588,23 @@ from itertools import count
 # 4. Paimkite kas antrą narį, pradedant trečiu nariu.
 # 5. Paimkite visus atbuline tvarka.
 
-apygarda = ['Puodziu', 'Zilinu', 'Dubiciu', 'Panociu', 'Kabeliu', 'Marcinkoniu','Kruminiu','Matuizu']
-print(apygarda)
-print(apygarda [:3])
-print(apygarda [3:5])
-print(apygarda [4:])
-print(apygarda [3::2])
-apygarda.reverse()
-print(apygarda)
+# apygarda = ['Puodziu', 'Zilinu', 'Dubiciu', 'Panociu', 'Kabeliu', 'Marcinkoniu','Kruminiu','Matuizu']
+# print(apygarda)
+# print(apygarda [:3])
+# print(apygarda [3:5])
+# print(apygarda [4:])
+# print(apygarda [3::2])
+# apygarda.reverse()
+# print(apygarda)
+
+# Susikurkite list studentų vidurkiams saugoti. Išsitraukite ir pasidėkite į
+# atskirą list tris didžiausius pažymius (galite surikiuoti ir išsikirpti ką reikia).
+
+vidurkis = [4.5, 6.7, 8, 10, 6.9, 8.9]
+print(vidurkis)
+vidurkis.sort()
+print(vidurkis)
+vidurkis.reverse()
+print(vidurkis)
+print(vidurkis [:3])
+
