@@ -826,11 +826,27 @@ from traceback import print_list
 # Išveskite visus skaičius nuo 1 iki 50. Prie kiekvieno lyginio skaičiaus
 # parašykite žodį "lyginis", o prie kiekvieno nelyginio – "nelyginis".
 
+# number = 0
+# # while number <=50:
+# #     if number %2 == 0:
+# #       print(f'lyginis: {number}')
+# #       number += 1
+# #       if number %2 != 0:
+# #          print(f'nelyginis: {number}')
+# #          number += 1
+
+# Išveskite visus skaičius nuo 25 iki 50. Vietoj skaičių, kurie dalinasi iš 3
+# išveskite tekstą "dalinasi iš 3".
+pradzia, pabaiga = 25, 50
 number = 0
-while number <=50:
-    if number %2 == 0:
-      print(f'lyginis: {number}')
+while number < pradzia or number < pabaiga:
+    if number %3 == 0:
+      print('dalinasi iš 3')
       number += 1
-      if number %2 != 0:
-         print(f'nelyginis: {number}')
-         number += 1
+
+pradzia, pabaiga = 25, 50
+number = 0
+while number < pradzia or number < pabaiga:
+    if number %3 == 0:
+      print(f'dalinasi iš 3 {number}')
+      number += 1
