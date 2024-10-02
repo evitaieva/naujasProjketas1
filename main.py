@@ -699,10 +699,20 @@ from traceback import print_list
 # Visais atvejais išveskite tą patį pasisveikinimą,
 # pavyzdžiui "Labas, Ieva" (ši eilutė kartotųsi 4 kartus).
 
-vardas = 'Evita' #vietoj inputo
-for letter in vardas:
-   print('labas, ' + vardas)
-print("------------------------")
-for i in range(0,len(vardas)):
-   print(vardas)
+# vardas = 'Evita' #vietoj inputo
+# for letter in vardas:
+#    print('labas, ' + vardas)
+# print("------------------------")
+# for i in range(0,len(vardas)):
+#    print(vardas)
+
+# Susikurkite tokį ciklą: for elementas in [88, 65, 21, 26, 47]
+# Iš duotų skaičių išveskite visus skaičius, kurie yra lyginiai.
+
+
+for skaiciai in [88, 65, 21, 26, 47]:
+   if skaiciai  %2 ==0:
+      print(skaiciai)
+
+
 
