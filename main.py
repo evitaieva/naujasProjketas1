@@ -757,7 +757,13 @@ from traceback import print_list
 # raidę iš žodžio atskiroje eilutėje, taip pat, tą raidę eilutėje kartokite tiek
 # kartų kiek pasirinko vartotojas (16 pvz).
 
-word = input('prasau iveskite zodi: ')
-number = int(input('prasau iveskite skaiciu: '))
-for t in word:
-   print(t * number)
+# word = input('prasau iveskite zodi: ')
+# number = int(input('prasau iveskite skaiciu: '))
+# for t in word:
+#    print(t * number)
+
+# Raskite visų skaičių nuo 1 iki 100 sumą.
+suma = 0
+for i in range(100):
+   suma += i
+   print(f'sum: {suma}')
