@@ -817,9 +817,20 @@ from traceback import print_list
 #             print('Buzz')
 
 # Išveskite visus skaičius nuo 1 iki 20.
+#
+# number = 0
+# while number <=20:
+#    print(number)
+#    number += 1
+
+# Išveskite visus skaičius nuo 1 iki 50. Prie kiekvieno lyginio skaičiaus
+# parašykite žodį "lyginis", o prie kiekvieno nelyginio – "nelyginis".
 
 number = 0
-while number <=20:
-   print(number)
-   number += 1
-
+while number <=50:
+    if number %2 == 0:
+      print(f'lyginis: {number}')
+      number += 1
+      if number %2 != 0:
+         print(f'nelyginis: {number}')
+         number += 1
