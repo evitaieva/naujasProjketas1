@@ -769,8 +769,15 @@ from traceback import print_list
 #    print(f'sum: {suma}')
 
 # Raskite visų lyginių skaičių nuo 20 iki 50 sumą.
+# suma = 0
+# for i in range(20, 50):
+#    if i % 2 == 0:
+#       suma += i
+#    print(f'lyginiu sum: {suma}')
+
+# Raskite visų nelyginių skaičių nuo 30 iki 60 sumą.
 suma = 0
-for i in range(20, 50):
-   if i % 2 == 0:
+for i in range(30, 60):
+   if i % 2 != 0:
       suma += i
-   print(f'lyginiu sum: {suma}')
+   print(f'nelyginiu sum: {suma}')
