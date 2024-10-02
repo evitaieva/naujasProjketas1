@@ -763,7 +763,14 @@ from traceback import print_list
 #    print(t * number)
 
 # Raskite visų skaičių nuo 1 iki 100 sumą.
+# suma = 0
+# for i in range(100):
+#    suma += i
+#    print(f'sum: {suma}')
+
+# Raskite visų lyginių skaičių nuo 20 iki 50 sumą.
 suma = 0
-for i in range(100):
-   suma += i
-   print(f'sum: {suma}')
+for i in range(20, 50):
+   if i % 2 == 0:
+      suma += i
+   print(f'lyginiu sum: {suma}')
