@@ -776,8 +776,20 @@ from traceback import print_list
 #    print(f'lyginiu sum: {suma}')
 
 # Raskite visų nelyginių skaičių nuo 30 iki 60 sumą.
+# suma = 0
+# for i in range(30, 60):
+#    if i % 2 != 0:
+#       suma += i
+#    print(f'nelyginiu sum: {suma}')
+
+# Rasti visų skaičių, žemesnių už 1000 ir kurie dalinasi iš 3 arba 5, sumą.
+# Pavyzdys: Visi skaičiai mažesni už 10 ir kurie dalinasi iš 3 arba 5 yra: 3, 5, 6, 9.
+# Šių skaičių suma yra 23. Turite gauti 233168 atsakymą.
+
 suma = 0
-for i in range(30, 60):
-   if i % 2 != 0:
+for i in range(0, 1000):
+   if i % 3 == 0 or 5 == 0:
       suma += i
-   print(f'nelyginiu sum: {suma}')
+   print(f'233168: {suma}')
+
+
