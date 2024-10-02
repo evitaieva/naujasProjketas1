@@ -710,9 +710,29 @@ from traceback import print_list
 # Iš duotų skaičių išveskite visus skaičius, kurie yra lyginiai.
 
 
-for skaiciai in [88, 65, 21, 26, 47]:
-   if skaiciai  %2 ==0:
-      print(skaiciai)
+# for skaiciai in [88, 65, 21, 26, 47]:
+#    if skaiciai  %2 ==0:
+#       print(skaiciai)
+
+# Leiskite vartotojui nurodyti rėžių pradžią, pabaigą, žingsnį.
+# Taip pat, kokius skaičius jis nori matyti (lyginius ar nelyginius). Patikrinkite ar rėžiai tinkami,
+# jei taip vykdykite ciklą, kuris eitų per nurodytą rėžių, darant atitinkamą
+# žingsnį. Išveskite tik tokius skaičius kokius vartotojas pasirinko (lyginius
+# arba nelyginius).
+
+start = int(input('prasau iveskite pradzios skaiciu: '))
+end = int(input('prasau iveskite pabaigos skaiciu: '))
+step = int(input('prasau iveskite bet koki skaiciu: '))
+number = str(input('norite matyti lyginius ar nelyginius skaicius? '))
+isEven = number =="lyginius"
+if start < end:
+   for i in range(start, end + 1, step):
+      if isEven and i % 2 ==0:
+         print(i)
+      elif number == 'nelyginius' and i % 2 !=0:
+         print(i)
+else:
+   print('start is less then end')
 
 
 
