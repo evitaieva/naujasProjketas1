@@ -720,19 +720,34 @@ from traceback import print_list
 # žingsnį. Išveskite tik tokius skaičius kokius vartotojas pasirinko (lyginius
 # arba nelyginius).
 
-start = int(input('prasau iveskite pradzios skaiciu: '))
-end = int(input('prasau iveskite pabaigos skaiciu: '))
-step = int(input('prasau iveskite bet koki skaiciu: '))
-number = str(input('norite matyti lyginius ar nelyginius skaicius? '))
-isEven = number =="lyginius"
-if start < end:
-   for i in range(start, end + 1, step):
-      if isEven and i % 2 ==0:
-         print(i)
-      elif number == 'nelyginius' and i % 2 !=0:
-         print(i)
-else:
-   print('start is less then end')
+# start = int(input('prasau iveskite pradzios skaiciu: '))
+# end = int(input('prasau iveskite pabaigos skaiciu: '))
+# step = int(input('prasau iveskite bet koki skaiciu: '))
+# number = str(input('norite matyti lyginius ar nelyginius skaicius? '))
+# isEven = number =="lyginius"
+# if start < end:
+#    for i in range(start, end + 1, step):
+#       if isEven and i % 2 ==0:
+#          print(i)
+#       elif number == 'nelyginius' and i % 2 !=0:
+#          print(i)
+# else:
+#    print('start is less then end')
 
 
+# Su for pagalba, pamėginkite išvesti tokią eglutę:
+# *
+# **
+# ***
+# ****
+# *****
+# (papildomai) leiskite vartotojui pasirinkti kokio dydžio eglutė turėtų būti
+# išvesta.
 
+star = '*'
+for s in (star):
+   print(s * 1)
+   print(s * 2)
+   print(s * 3)
+   print(s * 4)
+   print(s * 5)
