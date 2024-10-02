@@ -744,10 +744,20 @@ from traceback import print_list
 # (papildomai) leiskite vartotojui pasirinkti kokio dydžio eglutė turėtų būti
 # išvesta.
 
-star = '*'
-for s in (star):
-   print(s * 1)
-   print(s * 2)
-   print(s * 3)
-   print(s * 4)
-   print(s * 5)
+# star = '*'
+# for s in (star):
+#    print(s * 1)
+#    print(s * 2)
+#    print(s * 3)
+#    print(s * 4)
+#    print(s * 5)
+
+# Leiskite vartotojui įvesti bet kokį žodį, bei pasirinkti po kiek kartų turėtų
+# būti pakartojama kiekviena raidė. Su ciklo pagalba išveskite kiekvieną
+# raidę iš žodžio atskiroje eilutėje, taip pat, tą raidę eilutėje kartokite tiek
+# kartų kiek pasirinko vartotojas (16 pvz).
+
+word = input('prasau iveskite zodi: ')
+number = int(input('prasau iveskite skaiciu: '))
+for t in word:
+   print(t * number)
