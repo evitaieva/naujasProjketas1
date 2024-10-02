@@ -668,22 +668,15 @@ from traceback import print_list
 #     else:
 #         print(f'skaicius {skaicius} yra nelyginis')
 
-# Susikurkite kintamuosius rėžių pradžiai ir pabaigai nusakyti. Patikrinkite,
-# kad tai būtų validu (pradžia turi būti mažesnė nei pabaiga). Jei rėžiai
-# tinkami, tuomet vykdyti for, kuris atskirose eilutėse išvestų kiekvieną
-# skaičių iš tų rėžių, bei atskiriant tarpu - tų skaičių kvadratus.
-
-for skaicius in range(1,9):
-   print(skaicius * skaicius)
-
-
-
-
-# kazkiek = 9
-# for i in range(kazkiek):
-#     print(i)
-#
-# pradzia = 3
-# pabaiga = 8
-# for i in range(pradzia, pabaiga + 1):
-#     print(f'kazkiek {i}')
+# Susikurkite kintamuosius rėžių pradžiai ir pabaigai nusakyti.
+# Patikrinkite, kad tai būtų validu (pradžia turi būti mažesnė nei pabaiga).
+# Jei rėžiai tinkami, tuomet vykdyti for,
+# --kuris atskirose eilutėse išvestų kiekvieną skaičių iš tų rėžių,
+# --bei atskiriant tarpu - tų skaičių kvadratus.
+start = 1
+end = 9
+if start < end:
+   for skaicius in range(start, end):
+      print(str(skaicius) + " " + str(skaicius * skaicius))
+else:
+   print("lempiniai reziai")
