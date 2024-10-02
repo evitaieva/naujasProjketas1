@@ -687,10 +687,22 @@ from traceback import print_list
 # --kuris iš duotų skaičių išvestų visus nelyginius skaičius                  V
 # --arba tuos, kurie dalinasi iš 8.                              V
 
-start = 1
-end = 9
-if start < end:
-   for skaicius in range(start, end):
-      if skaicius % 2 != 0 or skaicius %8 == 0:
-         print(skaicius)
+# start = 1
+# end = 9
+# if start < end:
+#    for skaicius in range(start, end):
+#       if skaicius % 2 != 0 or skaicius %8 == 0:
+#          print(skaicius)
+
+# Leiskite vartotojui įvesti savo vardą.
+# Ciklą for vykdykite tiek kartų kiek tame varde yra raidžių.
+# Visais atvejais išveskite tą patį pasisveikinimą,
+# pavyzdžiui "Labas, Ieva" (ši eilutė kartotųsi 4 kartus).
+
+vardas = 'Evita' #vietoj inputo
+for letter in vardas:
+   print('labas, ' + vardas)
+print("------------------------")
+for i in range(0,len(vardas)):
+   print(vardas)
 
