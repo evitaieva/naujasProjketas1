@@ -744,13 +744,10 @@ from traceback import print_list
 # (papildomai) leiskite vartotojui pasirinkti kokio dydžio eglutė turėtų būti
 # išvesta.
 
-# star = '*'
-# for s in (star):
-#    print(s * 1)
-#    print(s * 2)
-#    print(s * 3)
-#    print(s * 4)
-#    print(s * 5)
+s = '*'
+howHigh = 25
+for i in range(0,howHigh + 1):
+   print(s * i)
 
 # Leiskite vartotojui įvesti bet kokį žodį, bei pasirinkti po kiek kartų turėtų
 # būti pakartojama kiekviena raidė. Su ciklo pagalba išveskite kiekvieną
@@ -858,9 +855,13 @@ from traceback import print_list
 # Išveskite visus skaičius nuo 1 iki 100
 # arba iki tol kol pasitaikys toks, kuris dalinasi iš 7.
 
-number = 0
-while number <= 100:
-    number += 1
-    print(number)
-    if number % 7 == 0:
-       break
+# number = 0
+# while number <= 100:
+#     number += 1
+#     print(number)
+#     if number % 7 == 0:
+#        break
+
+
+# Išvedinėkite visus skaičius nuo 1 iki tol kol pasitaikys skaičius, kuris
+# dalinasi iš 3 ir iš 5.
