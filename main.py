@@ -786,25 +786,25 @@ from traceback import print_list
 # Pavyzdys: Visi skaičiai mažesni už 10 ir kurie dalinasi iš 3 arba 5 yra: 3, 5, 6, 9.
 # Šių skaičių suma yra 23. Turite gauti 233168 atsakymą.
 
-suma = 0
-for i in range(0, 1000):
-    if i % 3 == 0 or i % 5 == 0:
-        suma += i
-print(f'233168: {suma}')
+# suma = 0
+# for i in range(0, 1000):
+#     if i % 3 == 0 or i % 5 == 0:
+#         suma += i
+# print(f'233168: {suma}')
 
 # "Write a program that prints the numbers from 1 to 100.
 # “Fizz” instead of the number and for the multiples of five
 # print “Buzz”. For numbers which are multiples of both three and five print
 # “FizzBuzz”."
 
-# FizzBuzz = 0
-# for i in range(1, 100):
-#    if i % 3 ==0:
-#       print('Fizz')
-#       if i % 5 ==0:
-#          print('Buzz')
-#             if i % 3 ==0 and 5 ==0:
-#                print('FizzBuzz')
+FizzBuzz = 0
+for i in range(1, 100):
+   if i % 3 ==0:
+      print('Fizz')
+      if i % 5 ==0:
+         print('Buzz')
+            if i % 3 ==0 and 5 ==0:
+               print('FizzBuzz')
 
 
 # FizzBuzz = 0
