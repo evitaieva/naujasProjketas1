@@ -866,11 +866,31 @@ from traceback import print_list
 # Išvedinėkite visus skaičius nuo 1 iki tol kol pasitaikys skaičius, kuris
 # dalinasi iš 3 ir iš 5.
 
-number = 1
-while number > 0:
-    print(number)
-    if number % 3 == 0 and number % 5 == 0:
-        break
-    number += 1
+# number = 1
+# while number > 0:
+#     print(number)
+#     if number % 3 == 0 and number % 5 == 0:
+#         break
+#     number += 1
 
+# Vartotojas turi suvesti rėžių pradžią ir pabaigą. Tačiau jūs turite patikrinti
+# ar nurodyti rėžiai yra geri (pradžia mažesnė už pabaigą). Liepkite
+# vartotojui kartoti įvedimą tol, kol rėžiai jau bus įvesti tinkamai. Turint
+# tinkamus rėžius, išveskite visus skaičius nuo rėžių pradžios iki pabaigos
+# (šitam jau vietoj while galite naudoti for ciklą), šalia kiekvieno skaičiaus
+# išvedant jo kvadratą, bei ar jis lyginis/nelyginis.
 
+while True:
+        print('prasau iveskite skaiciu')
+        number1 = int(input())
+        print('prasau iveskite skaiciu didesni uz pirmaji')
+        number2 = int(input())
+        if number1 < number2:
+            for number in range(number1, number2):
+                if (number1 * number2) % 2 == 0:
+                    print(f'{number}, {(number1 * number2)} lyginis')
+                else:
+                    print(f'{number} {(number1 * number2)} nelyginis')
+            break
+        else:
+            print('incorect numbers')
