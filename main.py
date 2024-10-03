@@ -786,11 +786,11 @@ from traceback import print_list
 # Pavyzdys: Visi skaičiai mažesni už 10 ir kurie dalinasi iš 3 arba 5 yra: 3, 5, 6, 9.
 # Šių skaičių suma yra 23. Turite gauti 233168 atsakymą.
 
-# suma = 0
-# for i in range(0, 1000):
-#    if i % 3 == 0 or 5 == 0:
-#       suma += i
-#    print(f'233168: {suma}')
+suma = 0
+for i in range(0, 1000):
+    if i % 3 == 0 or i % 5 == 0:
+        suma += i
+print(f'233168: {suma}')
 
 # "Write a program that prints the numbers from 1 to 100.
 # “Fizz” instead of the number and for the multiples of five
@@ -809,19 +809,21 @@ from traceback import print_list
 
 # FizzBuzz = 0
 # for i in range(1, 100):
-#    if i % 3 == 0 or 5 == 0:
-#       print('FizzBuzz')
-#       if i % 3 ==0:
-#          print('Fizz')
-#          if i % 5 ==0:
-#             print('Buzz')
+#    if i % 3 == 0 and i % 5 == 0:
+#         print('FizzBuzz')
+#    elif i % 3 == 0:
+#         print('Fizz')
+#    elif i % 5 == 0:
+#         print('Buzz')
+#    else:
+#        print(i)
 
 # Išveskite visus skaičius nuo 1 iki 20.
 #
 # number = 0
-# while number <=20:
-#    print(number)
+# while number < 20:
 #    number += 1
+#    print(number)
 
 # Išveskite visus skaičius nuo 1 iki 50. Prie kiekvieno lyginio skaičiaus
 # parašykite žodį "lyginis", o prie kiekvieno nelyginio – "nelyginis".
@@ -837,16 +839,28 @@ from traceback import print_list
 
 # Išveskite visus skaičius nuo 25 iki 50. Vietoj skaičių, kurie dalinasi iš 3
 # išveskite tekstą "dalinasi iš 3".
-pradzia, pabaiga = 25, 50
-number = 0
-while number < pradzia or number < pabaiga:
-    if number %3 == 0:
-      print('dalinasi iš 3')
-      number += 1
+# pabaiga = 50
+# number = 25
+# while number < pabaiga:
+#     if number % 3 == 0:
+#         print('dalinasi iš 3')
+#     else:
+#         print(number)
+#     number += 1
+#
+# pradzia, pabaiga = 25, 50
+# number = 0
+# while number < pradzia or number < pabaiga:
+#     if number %3 == 0:
+#       print(f'dalinasi iš 3 {number}')
+#       number += 1
 
-pradzia, pabaiga = 25, 50
-number = 0
-while number < pradzia or number < pabaiga:
-    if number %3 == 0:
-      print(f'dalinasi iš 3 {number}')
-      number += 1
+# Išveskite visus skaičius nuo 1 iki 100
+# arba iki tol kol pasitaikys toks, kuris dalinasi iš 7.
+
+# number = 0
+# while number <= 100:
+#     number += 1
+#     print(number)
+#     if number % 7 == 0:
+#        break
