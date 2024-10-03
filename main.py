@@ -797,26 +797,26 @@ from traceback import print_list
 # print “Buzz”. For numbers which are multiples of both three and five print
 # “FizzBuzz”."
 
-FizzBuzz = 0
-for i in range(1, 100):
-   if i % 3 ==0:
-      print('Fizz')
-      if i % 5 ==0:
-         print('Buzz')
-            if i % 3 ==0 and 5 ==0:
-               print('FizzBuzz')
-
-
 # FizzBuzz = 0
 # for i in range(1, 100):
-#    if i % 3 == 0 and i % 5 == 0:
-#         print('FizzBuzz')
-#    elif i % 3 == 0:
-#         print('Fizz')
-#    elif i % 5 == 0:
-#         print('Buzz')
-#    else:
-#        print(i)
+#    if i % 3 ==0:
+#       print('Fizz')
+#       if i % 5 ==0:
+#          print('Buzz')
+#             if i % 3 ==0 and 5 ==0:
+#                print('FizzBuzz')
+
+
+FizzBuzz = 0
+for i in range(1, 100):
+   if i % 3 == 0 and i % 5 == 0:
+        print('FizzBuzz')
+   elif i % 3 == 0:
+        print('Fizz')
+   elif i % 5 == 0:
+        print('Buzz')
+   else:
+       print(i)
 
 # Išveskite visus skaičius nuo 1 iki 20.
 #
