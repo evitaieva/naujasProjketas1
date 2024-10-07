@@ -925,6 +925,10 @@ from traceback import print_list
 #    print(number)
 
 # 3.Sukurkite masyvą iš dešimties augalų pavadinimų.
-augaluPavdinimai = 'Abrikosas', 'Agukas','Akišveitė', 'Aklė','Akmengrūdis', 'Aktinidija', 'Alangis', 'Alavijas', 'Alyvmediniai', 'Alyva'
+# augaluPavdinimai = 'Abrikosas', 'Agukas','Akišveitė', 'Aklė','Akmengrūdis', 'Aktinidija', 'Alangis', 'Alavijas', 'Alyvmediniai', 'Alyva'
+#
+# print(augaluPavdinimai)
 
-print(augaluPavdinimai)
+# 4. Atspausdinkite kiekvieną 3čio uždavinio augalą atskiroje eilutėje.
+
+print('Abrikosas \nAgukas \nAkišveitė \nAklė \nAkmengrūdis \nAktinidija \nAlangis \nAlavijas \nAlyvmediniai \nAlyva')
