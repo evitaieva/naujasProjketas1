@@ -9,6 +9,7 @@ import random
 import re
 
 from itertools import count
+from logging import disable
 from traceback import print_list
 
 # print('hello')
@@ -942,9 +943,20 @@ from traceback import print_list
 
 # 6.Atspausdinkite kas antrą skaičių nuo 10 iki 50 (porinius);
 
+# number = 10
+# while number < 50:
+#     if number % 2 == 0:
+#         print(number)
+#     number += 1
+
+# 7.Atspausdinkite kas antrą skaičių nuo 10 iki 50. (porinius) Jei skaičius dalinasi iš 10 be liekanos jo nespausdinkit
+# ( naudokite continue.) (atspausdinti visus porinus skaičius, išskyrus tuos kurie dalinasi iš 10 be liekanos)
 
 number = 10
 while number < 50:
+    number += 1
+    if number % 10 ==0:
+        continue
     if number % 2 == 0:
         print(number)
-    number += 1
+
