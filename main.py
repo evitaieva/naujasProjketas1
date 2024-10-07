@@ -935,7 +935,16 @@ from traceback import print_list
 
 # 5.Atspausdinkite 3čio uždavinio kiekvieną augalą pradedant nuo paskutinio, ir baigiant pirmuoju. (atvirkščias ciklas).
 
-augaluPavdinimai = ['Abrikosas', 'Agukas','Akišveitė', 'Aklė','Akmengrūdis', 'Aktinidija',
-'Alangis', 'Alavijas', 'Alyvmediniai', 'Alyva']
-augaluPavdinimai.reverse()
-print(augaluPavdinimai)
+# augaluPavdinimai = ['Abrikosas', 'Agukas','Akišveitė', 'Aklė','Akmengrūdis', 'Aktinidija',
+# 'Alangis', 'Alavijas', 'Alyvmediniai', 'Alyva']
+# augaluPavdinimai.reverse()
+# print(augaluPavdinimai)
+
+# 6.Atspausdinkite kas antrą skaičių nuo 10 iki 50 (porinius);
+
+
+number = 10
+while number < 50:
+    if number % 2 == 0:
+        print(number)
+    number += 1
