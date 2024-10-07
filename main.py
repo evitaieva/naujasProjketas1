@@ -880,17 +880,30 @@ from traceback import print_list
 # (šitam jau vietoj while galite naudoti for ciklą), šalia kiekvieno skaičiaus
 # išvedant jo kvadratą, bei ar jis lyginis/nelyginis.
 
+# while True:
+#         print('prasau iveskite skaiciu')
+#         number1 = int(input())
+#         print('prasau iveskite skaiciu didesni uz pirmaji')
+#         number2 = int(input())
+#         if number1 < number2:
+#             for number in range(number1, number2):
+#                 if (number1 * number2) % 2 == 0:
+#                     print(f'{number}, {(number1 * number2)} lyginis')
+#                 else:
+#                     print(f'{number} {(number1 * number2)} nelyginis')
+#             break
+#         else:
+#             print('incorect numbers')
+
+
+# Išveskite visus skaičius nuo 1 iki kol pasitaikys toks, kuris yra pirminis ir
+# yra didesnis nei 20.
+
+
+number = 10
 while True:
-        print('prasau iveskite skaiciu')
-        number1 = int(input())
-        print('prasau iveskite skaiciu didesni uz pirmaji')
-        number2 = int(input())
-        if number1 < number2:
-            for number in range(number1, number2):
-                if (number1 * number2) % 2 == 0:
-                    print(f'{number}, {(number1 * number2)} lyginis')
-                else:
-                    print(f'{number} {(number1 * number2)} nelyginis')
-            break
-        else:
-            print('incorect numbers')
+    number += 0
+    print(number)
+    if number / number == 1:
+       break
+print("hi")
