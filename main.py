@@ -625,7 +625,7 @@ from traceback import print_list
 
 # Sukurkite sąrašą, kuriame saugotumėte sandėlio likučius. Į atskirą sąrašą
 # persikelkite visus likučius kurių lieka mažai (mažiau nei 5 vnt. arba trijų
-# prekių likučius, kurių likę mažiausiai). - NEPADARYTA
+# prekių likučius, kurių likę mažiausiai). -
 
 # Su for pagalba penkis kartus išveskite savo vardą.
 # for sk in range(5):
@@ -919,7 +919,12 @@ from traceback import print_list
 
 # 2. Sukurkite ciklą kuris atspausdintų skaičius nuo 0 iki 9.
 
-number = 0
-while number < 9:
-   number += 1
-   print(number)
+# number = 0
+# while number < 9:
+#    number += 1
+#    print(number)
+
+# 3.Sukurkite masyvą iš dešimties augalų pavadinimų.
+augaluPavdinimai = 'Abrikosas', 'Agukas','Akišveitė', 'Aklė','Akmengrūdis', 'Aktinidija', 'Alangis', 'Alavijas', 'Alyvmediniai', 'Alyva'
+
+print(augaluPavdinimai)
