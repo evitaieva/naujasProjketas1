@@ -911,8 +911,15 @@ from traceback import print_list
 
 # 1. Sukurkite ciklą kuris atspausdintų 10 kartų žodį “labas”.
 
-labas = 'labas'
-kiekKartu = 10
-while kiekKartu > 0:
-    print(labas)
-    kiekKartu -= 1
+# labas = 'labas'
+# kiekKartu = 10
+# while kiekKartu > 0:
+#     print(labas)
+#     kiekKartu -= 1
+
+# 2. Sukurkite ciklą kuris atspausdintų skaičius nuo 0 iki 9.
+
+number = 0
+while number < 9:
+   number += 1
+   print(number)
