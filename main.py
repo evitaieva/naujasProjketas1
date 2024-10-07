@@ -7,6 +7,7 @@
 import pathlib
 import random
 import re
+
 from itertools import count
 from traceback import print_list
 
@@ -930,5 +931,11 @@ from traceback import print_list
 # print(augaluPavdinimai)
 
 # 4. Atspausdinkite kiekvieną 3čio uždavinio augalą atskiroje eilutėje.
+# print('Abrikosas \nAgukas \nAkišveitė \nAklė \nAkmengrūdis \nAktinidija \nAlangis \nAlavijas \nAlyvmediniai \nAlyva')
 
-print('Abrikosas \nAgukas \nAkišveitė \nAklė \nAkmengrūdis \nAktinidija \nAlangis \nAlavijas \nAlyvmediniai \nAlyva')
+# 5.Atspausdinkite 3čio uždavinio kiekvieną augalą pradedant nuo paskutinio, ir baigiant pirmuoju. (atvirkščias ciklas).
+
+augaluPavdinimai = ['Abrikosas', 'Agukas','Akišveitė', 'Aklė','Akmengrūdis', 'Aktinidija',
+'Alangis', 'Alavijas', 'Alyvmediniai', 'Alyva']
+augaluPavdinimai.reverse()
+print(augaluPavdinimai)
