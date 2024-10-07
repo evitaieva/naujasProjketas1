@@ -900,10 +900,19 @@ from traceback import print_list
 # yra didesnis nei 20.
 
 
-number = 10
-while True:
-    number += 0
-    print(number)
-    if number / number == 1:
-       break
-print("hi")
+# number = 10
+# while True:
+#     number += 0
+#     print(number)
+#     if number / number == 1:
+#        break
+# print("hi")
+
+
+# 1. Sukurkite ciklą kuris atspausdintų 10 kartų žodį “labas”.
+
+labas = 'labas'
+kiekKartu = 10
+while kiekKartu > 0:
+    print(labas)
+    kiekKartu -= 1
