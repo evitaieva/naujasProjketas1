@@ -1187,19 +1187,35 @@ from traceback import print_list
 # skaičius. Bei ant galo tekstą "visi skaičiai, kurie dalinasi iš 3" ir visus
 # skaičius, kurie atitinka tokią sąlygą.
 
+# numbers = []
+# for i in range(random.randint(3, 10)):
+#     numbers.append(random.randint(0, 20))
+#
+# print(numbers)
+#
+# even = [number for number in numbers if number % 2 == 0]
+# odd = [number for number in numbers if number % 2 != 0]
+# three = [number for number in numbers if number % 3 == 0]
+#
+# print(f'Lyginiai: {even}')
+# print(f'Nelyginiai: {odd}')
+# print(f'Dalinasi iš trijų: {three}')
+
+# 27.Susikurkite sąrašą ir jį užpildykite atsitiktiniais skaičiais. Išveskite visus
+# skaičius didesnius nei vidurkis.
+
 numbers = []
 for i in range(random.randint(3, 10)):
     numbers.append(random.randint(0, 20))
 
-print(numbers)
+average = sum(numbers)/len(numbers)
 
-even = [number for number in numbers if number % 2 == 0]
-odd = [number for number in numbers if number % 2 != 0]
-three = [number for number in numbers if number % 3 == 0]
+more = [number for number in numbers if number > average]
 
-print(f'Lyginiai: {even}')
-print(f'Nelyginiai: {odd}')
-print(f'Dalinasi iš trijų: {three}')
+print(f'Visi: {numbers}')
+print(f'Vidurkis: {average}')
+print(f'Daugiau negu vidurkis: {more}')
+
 
 
 
