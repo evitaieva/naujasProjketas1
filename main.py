@@ -1150,7 +1150,22 @@ for pazimys in pazymiai:
         print(f'{pazimys}: patenkinamai')
     else:
         print(f'{pazimys}: nepatenkinamai')
+# 24.Susikurkite programą, kurioje vartotojas galėtų nusakyti kiek atsitiktinių
+# skaičių turėtų būti sugeneruota. Tuomet programa turėtų būtent tokį kiekį
+# atsitiktinių skaičių sugeneruoti ir sudėti į sąrašą. Išveskite visus šiuos
+# skaičius ekrane. Tuomet tuos pačius skaičius išveskite ekrane dar kartą,
+# tačiau viską spausdinkite atskirose eilutėse, eilutėje nurodant patį skaičių
+# ir jo kvadratą.
 
+suvesti = int(input('Kiek skaičių suvesti: '))
+nums = []
+
+for num in range(suvesti):
+    nums.append(random.randint(0, 100))
+print(f'Skaičiai: {nums}')
+
+for num in nums:
+    print(f'{num}: {num**2}')
 
 
 
