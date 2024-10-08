@@ -981,16 +981,22 @@ from traceback import print_list
 # ir suskaičiuokite kiek tarp jų yra didesnių už 150.  Skaičiai didesni nei 275 turi
 # būti atspausdinti skliausteliuose” [ ] “.
 
-numbers = [random.randint(0, 300)  for number in range(300)]
-countAbove_150 = len([number for number in numbers if number > 150])
-numbersAbove_275 =[number for number in numbers if number > 275]
+# numbers = [random.randint(0, 300)  for number in range(300)]
+# countAbove_150 = len([number for number in numbers if number > 150])
+# numbersAbove_275 =[number for number in numbers if number > 275]
+#
+# nums = [number if number not in numbersAbove_275 else f'[{number}]' for number in numbers]
+#
+# strNums = str(nums)
+# spacedNums = strNums.replace(',', ' ').replace("'", '')
+#
+# print(f'numbers: {spacedNums[1:-1]}')
 
-nums = [number if number not in numbersAbove_275 else f'[{number}]' for number in numbers]
+# 11.Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000, kurie dalijasi iš 77
+# be liekanos. Skaičius atskirkite kableliais. Po paskutinio skaičiaus kablelio neturi būti.
 
-strNums = str(nums)
-spacedNums = strNums.replace(',', ' ').replace("'", '')
-
-print(f'numbers: {spacedNums[1:-1]}')
+numbers = [number for number in range(1, 3001) if number % 77 ==0]
+print(str(numbers)[1:-1])
 
 
 
