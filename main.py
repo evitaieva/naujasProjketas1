@@ -1089,6 +1089,15 @@ print('Prie projekto dirba: ')
 for member in team:
     print(member)
 
+# 19.Susikurkite sąrašą, kuriame būtų saugomos jau praeitos Python temos.
+# Išveskite tekstą "mes jau mokėmės:". Ir iškart po to atskirose eilutėse
+# visas temas, tačiau jas sunumeruokite "1-a tema:", "2-a tema:" ir t.t. Tai
+# pamėginkite atlikti tiek su for ciklu, tiek su while ciklu.
+
+topic = ['ciklai', 'listai', 'stringai']
+print('Jau mokėmės: ')
+for top in topic:
+    print(top)
 
 
 
