@@ -1204,17 +1204,48 @@ from traceback import print_list
 # 27.Susikurkite sąrašą ir jį užpildykite atsitiktiniais skaičiais. Išveskite visus
 # skaičius didesnius nei vidurkis.
 
+# numbers = []
+# for i in range(random.randint(3, 10)):
+#     numbers.append(random.randint(0, 20))
+#
+# average = sum(numbers)/len(numbers)
+#
+# more = [number for number in numbers if number > average]
+#
+# print(f'Visi: {numbers}')
+# print(f'Vidurkis: {average}')
+# print(f'Daugiau negu vidurkis: {more}')
+
+# 28.Susikurkite programą, kurioje būtų sukurtas sąrašas iš pasirinkto kiekio
+# atsitiktinių skaičių. Raskite kiekvieno skaičiaus daliklius, pavyzdžiui:
+
 numbers = []
 for i in range(random.randint(3, 10)):
     numbers.append(random.randint(0, 20))
 
-average = sum(numbers)/len(numbers)
+numbers.sort()
 
-more = [number for number in numbers if number > average]
+print(f'Skaičiai: {str(numbers)[1:-1]}')
 
-print(f'Visi: {numbers}')
-print(f'Vidurkis: {average}')
-print(f'Daugiau negu vidurkis: {more}')
+numbers = list(dict.fromkeys(numbers))
+print(f'Unikalūs: {str(numbers)[1:-1]}')
+
+
+
+factors_total = []
+for number in numbers:
+    factors = []
+    for factor in range(1, number+1):
+        if number % factor == 0:
+            factors.append(factor)
+    factors_total.append(factors)
+
+for index, sk in enumerate(numbers):
+    if sk == 0:
+        print(f'Skaičius 0 dalinasi iš visų įmanomų skaičių')
+    else:
+        print(f'Skaičius {sk} dalinasi iš {str(factors_total[index])[1:-1]}')
+
 
 
 
