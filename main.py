@@ -1115,6 +1115,22 @@ for CName in country:
     print(CName)
     print(f'Šalis: {CName}')
 
+# 22.Susikurkite sąrašą prekių krepšeliui saugoti. Išveskite kiek prekių
+# krepšelyje yra narių. Tuomet išveskite visą prekių krepšelio informaciją,
+# nurodant kelinta prekė, pvz "nr 1 pirkinys:", "nr 2 pirkinys:" ir t.t.
+
+prekes = ['pienas', 'obuoliai', 'miltai', 'arbuzas']
+print(f'Sąrašo ilgis: {len(prekes)}')
+for number, preke in enumerate(prekes):
+    print(f'Nr. {number + 1}: {prekes}')
+
+prekes = ['pienas', 'obuoliai', 'miltai', 'arbuzas']
+print(f'Sąrašo ilgis: {len(prekes)}')
+for number, preke in enumerate(prekes):
+    print(f'Nr. {number + 1}: {preke}')
+
+
+
 
 
 
