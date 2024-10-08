@@ -1129,6 +1129,28 @@ print(f'Sąrašo ilgis: {len(prekes)}')
 for number, preke in enumerate(prekes):
     print(f'Nr. {number + 1}: {preke}')
 
+# 23.Susikurkite pažymių sąrašą ir užpildykite jį informacija. Surikiuokite
+# pažymius nuo didžiausio iki mažiausio. Išveskite visus turimus pažymius
+# atskirose eilutėse. Prie kiekvieno pažymio taip pat prirašykite "puikiai",
+# jeigu jis yra 10, "labai gerai", jeigu jis yra 9 ir t.t.
+
+pazymiai = [10, 9, 8, 5, 10, 5, 6]
+pazymiai.sort()
+pazymiai.reverse()
+for pazimys in pazymiai:
+    if pazimys == 10:
+        print(f'{pazimys}: puikiai')
+    elif pazimys == 9:
+        print(f'{pazimys}: labai gerai')
+    elif 7 <= pazimys <= 8:
+        print(f'{pazimys}: gerai')
+    elif 5 <= pazimys <= 6:
+        print(f'{pazimys}: vidutiniškai')
+    elif pazimys == 4:
+        print(f'{pazimys}: patenkinamai')
+    else:
+        print(f'{pazimys}: nepatenkinamai')
+
 
 
 
