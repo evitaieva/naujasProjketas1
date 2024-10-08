@@ -1099,6 +1099,14 @@ print('Jau mokėmės: ')
 for top in topic:
     print(top)
 
+# 20.Susikurkite masyvą studijų programų pavadinimams saugoti. Užpildykite
+# šį masyvą duomenimis. Išveskite kiekvieną studijų programą atskiroje
+# eilutėje.
+
+studijos = ['charakternas', 'baletas', 'tautiniai', 'istoriniai']
+for pas in studijos:
+    print(pas)
+
 
 
 
