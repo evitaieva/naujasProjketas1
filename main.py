@@ -995,8 +995,15 @@ from traceback import print_list
 # 11.Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000, kurie dalijasi iš 77
 # be liekanos. Skaičius atskirkite kableliais. Po paskutinio skaičiaus kablelio neturi būti.
 
-numbers = [number for number in range(1, 3001) if number % 77 ==0]
-print(str(numbers)[1:-1])
+# numbers = [number for number in range(1, 3001) if number % 77 ==0]
+# print(str(numbers)[1:-1])
+
+# 13. Nupieškite kvadratą iš “*”, kurio kraštines sudaro 25“*”.
+row = ['*' for element in range(25)]
+
+for column in range(25):
+    print(row)
+
 
 
 
