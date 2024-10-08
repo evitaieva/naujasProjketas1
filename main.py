@@ -1052,33 +1052,42 @@ from traceback import print_list
 # kas greičiau surenka 222 taškus. Partijas kartoti tol, kol kažkuris žaidėjas pirmas
 # surenka 222 arba daugiau taškų.
 
-Petro = []
-Jono = []
-PTurn = 0
-JTurn = 0
+# Petro = []
+# Jono = []
+# PTurn = 0
+# JTurn = 0
+#
+# while True:
+#
+#     while PTurn == JTurn:
+#         Petro.append(random.randint(10, 20))
+#         PTurn += 1
+#     while JTurn < PTurn:
+#         Jono.append(random.randint(5, 25))
+#         JTurn += 1
+#
+#     if sum(Petro) >=222:
+#         Petras = True
+#         break
+#     elif sum(Jono) >= 222:
+#         Petras = False
+#         break
+#
+# if Petras == True:
+#     print('Laimėjo Petras')
+# else:
+#     print('Laimėjo Jonas')
+#
+# print(f'Petro taškai: {sum(Petro)}. Jono taškai: {sum(Jono)}')
 
-while True:
+# 18.Susikurkite sąrašą projekto komandos narių vardams ir pavardėms
+# saugoti. Išveskite tekstą "prie projekto dirba šie komandos nariai:" ir iškart
+# po to kiekvieną komandos narį atskiroje eilutėje.
 
-    while PTurn == JTurn:
-        Petro.append(random.randint(10, 20))
-        PTurn += 1
-    while JTurn < PTurn:
-        Jono.append(random.randint(5, 25))
-        JTurn += 1
-
-    if sum(Petro) >=222:
-        Petras = True
-        break
-    elif sum(Jono) >= 222:
-        Petras = False
-        break
-
-if Petras == True:
-    print('Laimėjo Petras')
-else:
-    print('Laimėjo Jonas')
-
-print(f'Petro taškai: {sum(Petro)}. Jono taškai: {sum(Jono)}')
+team = ['Saulius', 'Vytautas', 'Edvinas']
+print('Prie projekto dirba: ')
+for member in team:
+    print(member)
 
 
 
