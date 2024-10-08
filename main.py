@@ -999,10 +999,32 @@ from traceback import print_list
 # print(str(numbers)[1:-1])
 
 # 13. Nupieškite kvadratą iš “*”, kurio kraštines sudaro 25“*”.
-row = ['*' for element in range(25)]
+# row = ['*' for element in range(25)]
+#
+# for column in range(25):
+#     print(row)
 
-for column in range(25):
-    print(row)
+# 14.Prieš tai nupieštam kvadratui nupieškite istrižaines zaigzdutę pakeisdami kitu simboliu. -NEPADARYTA
+
+# 15. Metam monetą. Monetos kritimo rezultatą imituojam random.randint(x,x) funkcija, kur 0 yra herbas,
+# o 1 - skaičius. Monetos metimo rezultatus išvedame į ekraną atskiroje eilutėje: “S” jeigu iškrito skaičius ir
+# “H” jeigu herbas. Suprogramuokite tris skirtingus scenarijus kai monetos metimą stabdome:
+# Iškritus herbui;
+# Tris kartus iškritus herbui;
+# Tris kartus iš eilės iškritus herbui;
+
+h = 0
+S = 1
+metimai = []
+while True:
+    metimas = random.randint(0, 1)
+    metimai.append(metimas)
+    if metimas == h:
+        break
+
+print((str(metimai).replace(str(H), 'H').replace(str(S), 'S')))
+
+
 
 
 
