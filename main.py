@@ -1035,15 +1035,51 @@ from traceback import print_list
 # print((str(metimai).replace(str(h), 'h').replace(str(s), 's')))
 
 
-h = 0
-s = 1
-metimai = []
+# h = 0
+# s = 1
+# metimai = []
+# while True:
+#     metimas = random.randint(0, 1)
+#     metimai.append(metimas)
+#     if metimai[-3:] == [0, 0, 0]:
+#         break
+# print((str(metimai).replace(str(h), 'h').replace(str(s), 's')))
+
+# 16. Kazys ir Petras žaidžia šaškėm. Petras surenka taškų kiekį nuo 10 iki 20,
+# Kazys surenka taškų kiekį nuo 5 iki 25. Vienoje eilutėje išvesti žaidėjų
+# vardus su taškų kiekiu ir “Partiją laimėjo: ​laimėtojo vardas​”.
+# Taškų kiekį generuokite funkcija ​random.randint(x,x)​. Žaidimą laimi tas,
+# kas greičiau surenka 222 taškus. Partijas kartoti tol, kol kažkuris žaidėjas pirmas
+# surenka 222 arba daugiau taškų.
+
+Petro = []
+Jono = []
+PTurn = 0
+JTurn = 0
+
 while True:
-    metimas = random.randint(0, 1)
-    metimai.append(metimas)
-    if metimai[-3:] == [0, 0, 0]:
+
+    while PTurn == JTurn:
+        Petro.append(random.randint(10, 20))
+        PTurn += 1
+    while JTurn < PTurn:
+        Jono.append(random.randint(5, 25))
+        JTurn += 1
+
+    if sum(Petro) >=222:
+        Petras = True
         break
-print((str(metimai).replace(str(h), 'h').replace(str(s), 's')))
+    elif sum(Jono) >= 222:
+        Petras = False
+        break
+
+if Petras == True:
+    print('Laimėjo Petras')
+else:
+    print('Laimėjo Jonas')
+
+print(f'Petro taškai: {sum(Petro)}. Jono taškai: {sum(Jono)}')
+
 
 
 
