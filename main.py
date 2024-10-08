@@ -1084,72 +1084,72 @@ from traceback import print_list
 # saugoti. Išveskite tekstą "prie projekto dirba šie komandos nariai:" ir iškart
 # po to kiekvieną komandos narį atskiroje eilutėje.
 
-team = ['Saulius', 'Vytautas', 'Edvinas']
-print('Prie projekto dirba: ')
-for member in team:
-    print(member)
+# team = ['Saulius', 'Vytautas', 'Edvinas']
+# print('Prie projekto dirba: ')
+# for member in team:
+#     print(member)
 
 # 19.Susikurkite sąrašą, kuriame būtų saugomos jau praeitos Python temos.
 # Išveskite tekstą "mes jau mokėmės:". Ir iškart po to atskirose eilutėse
 # visas temas, tačiau jas sunumeruokite "1-a tema:", "2-a tema:" ir t.t. Tai
 # pamėginkite atlikti tiek su for ciklu, tiek su while ciklu.
 
-topic = ['ciklai', 'listai', 'stringai']
-print('Jau mokėmės: ')
-for top in topic:
-    print(top)
+# topic = ['ciklai', 'listai', 'stringai']
+# print('Jau mokėmės: ')
+# for top in topic:
+#     print(top)
 
 # 20.Susikurkite masyvą studijų programų pavadinimams saugoti. Užpildykite
 # šį masyvą duomenimis. Išveskite kiekvieną studijų programą atskiroje
 # eilutėje.
 
-studijos = ['charakternas', 'baletas', 'tautiniai', 'istoriniai']
-for pas in studijos:
-    print(pas)
+# studijos = ['charakternas', 'baletas', 'tautiniai', 'istoriniai']
+# for pas in studijos:
+#     print(pas)
 
 # 21.Susikurkite masyvą šalių pavadinimams saugoti ir jį užpildykite
 # duomenimis. Išveskite šalių pavadinimus atskirose eilutėse, su prierašu
 # "šalis" ir tada nurodant šalį iš masyvo.
-country = ['France', 'Spain', 'Lithuania', 'Portugal', 'USA']
-for CName in country:
-    print(CName)
-    print(f'Šalis: {CName}')
+# country = ['France', 'Spain', 'Lithuania', 'Portugal', 'USA']
+# for CName in country:
+#     print(CName)
+#     print(f'Šalis: {CName}')
 
 # 22.Susikurkite sąrašą prekių krepšeliui saugoti. Išveskite kiek prekių
 # krepšelyje yra narių. Tuomet išveskite visą prekių krepšelio informaciją,
 # nurodant kelinta prekė, pvz "nr 1 pirkinys:", "nr 2 pirkinys:" ir t.t.
 
-prekes = ['pienas', 'obuoliai', 'miltai', 'arbuzas']
-print(f'Sąrašo ilgis: {len(prekes)}')
-for number, preke in enumerate(prekes):
-    print(f'Nr. {number + 1}: {prekes}')
-
-prekes = ['pienas', 'obuoliai', 'miltai', 'arbuzas']
-print(f'Sąrašo ilgis: {len(prekes)}')
-for number, preke in enumerate(prekes):
-    print(f'Nr. {number + 1}: {preke}')
+# prekes = ['pienas', 'obuoliai', 'miltai', 'arbuzas']
+# print(f'Sąrašo ilgis: {len(prekes)}')
+# for number, preke in enumerate(prekes):
+#     print(f'Nr. {number + 1}: {prekes}')
+#
+# prekes = ['pienas', 'obuoliai', 'miltai', 'arbuzas']
+# print(f'Sąrašo ilgis: {len(prekes)}')
+# for number, preke in enumerate(prekes):
+#     print(f'Nr. {number + 1}: {preke}')
 
 # 23.Susikurkite pažymių sąrašą ir užpildykite jį informacija. Surikiuokite
 # pažymius nuo didžiausio iki mažiausio. Išveskite visus turimus pažymius
 # atskirose eilutėse. Prie kiekvieno pažymio taip pat prirašykite "puikiai",
 # jeigu jis yra 10, "labai gerai", jeigu jis yra 9 ir t.t.
 
-pazymiai = [10, 9, 8, 5, 10, 5, 6]
-pazymiai.sort()
-pazymiai.reverse()
-for pazimys in pazymiai:
-    if pazimys == 10:
-        print(f'{pazimys}: puikiai')
-    elif pazimys == 9:
-        print(f'{pazimys}: labai gerai')
-    elif 7 <= pazimys <= 8:
-        print(f'{pazimys}: gerai')
-    elif 5 <= pazimys <= 6:
-        print(f'{pazimys}: vidutiniškai')
-    elif pazimys == 4:
-        print(f'{pazimys}: patenkinamai')
-    else:
-        print(f'{pazimys}: nepatenkinamai')
+# pazymiai = [10, 9, 8, 5, 10, 5, 6]
+# pazymiai.sort()
+# pazymiai.reverse()
+# for pazimys in pazymiai:
+#     if pazimys == 10:
+#         print(f'{pazimys}: puikiai')
+#     elif pazimys == 9:
+#         print(f'{pazimys}: labai gerai')
+#     elif 7 <= pazimys <= 8:
+#         print(f'{pazimys}: gerai')
+#     elif 5 <= pazimys <= 6:
+#         print(f'{pazimys}: vidutiniškai')
+#     elif pazimys == 4:
+#         print(f'{pazimys}: patenkinamai')
+#     else:
+#         print(f'{pazimys}: nepatenkinamai')
 # 24.Susikurkite programą, kurioje vartotojas galėtų nusakyti kiek atsitiktinių
 # skaičių turėtų būti sugeneruota. Tuomet programa turėtų būtent tokį kiekį
 # atsitiktinių skaičių sugeneruoti ir sudėti į sąrašą. Išveskite visus šiuos
@@ -1157,15 +1157,31 @@ for pazimys in pazymiai:
 # tačiau viską spausdinkite atskirose eilutėse, eilutėje nurodant patį skaičių
 # ir jo kvadratą.
 
-suvesti = int(input('Kiek skaičių suvesti: '))
-nums = []
+# suvesti = int(input('Kiek skaičių suvesti: '))
+# nums = []
+#
+# for num in range(suvesti):
+#     nums.append(random.randint(0, 100))
+# print(f'Skaičiai: {nums}')
+#
+# for num in nums:
+#     print(f'{num}: {num**2}')
 
-for num in range(suvesti):
-    nums.append(random.randint(0, 100))
-print(f'Skaičiai: {nums}')
+# 25.Susikurkite norimą sąrašą su duomenimis. Išsiveskite viso šio sąrašo
+# informaciją. Pakeiskite trijų pasirinktų narių reikšmes į kitas. Išsiveskite
+# pakeisto sąrašo informaciją.
 
-for num in nums:
-    print(f'{num}: {num**2}')
+duomenys = list('statistika')
+print(duomenys)
+
+new = [1, 2, 3]
+
+for i in range(3):
+    duomenys[random.randint(0, len(duomenys) + 1)] = new[i]
+
+print(duomenys)
+
+
 
 
 
