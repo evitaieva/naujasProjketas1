@@ -1171,16 +1171,35 @@ from traceback import print_list
 # informaciją. Pakeiskite trijų pasirinktų narių reikšmes į kitas. Išsiveskite
 # pakeisto sąrašo informaciją.
 
-duomenys = list('statistika')
-print(duomenys)
+# duomenys = list('statistika')
+# print(duomenys)
+#
+# new = [1, 2, 3]
+#
+# for i in range(3):
+#     duomenys[random.randint(0, len(duomenys) + 1)] = new[i]
+#
+# print(duomenys)
 
-new = [1, 2, 3]
+# 26.Susikurkite sąrašą ir jį užpildykite skaičiais (savarankiškai arba
+# atsitiktiniais). Iš pradžių išveskite tekstą "lyginiai skaičiai" ir visus lyginius
+# skaičius. Tuomet išveskite tekstą "visi nelyginiai skaičiai" ir visus nelyginius
+# skaičius. Bei ant galo tekstą "visi skaičiai, kurie dalinasi iš 3" ir visus
+# skaičius, kurie atitinka tokią sąlygą.
 
-for i in range(3):
-    duomenys[random.randint(0, len(duomenys) + 1)] = new[i]
+numbers = []
+for i in range(random.randint(3, 10)):
+    numbers.append(random.randint(0, 20))
 
-print(duomenys)
+print(numbers)
 
+even = [number for number in numbers if number % 2 == 0]
+odd = [number for number in numbers if number % 2 != 0]
+three = [number for number in numbers if number % 3 == 0]
+
+print(f'Lyginiai: {even}')
+print(f'Nelyginiai: {odd}')
+print(f'Dalinasi iš trijų: {three}')
 
 
 
