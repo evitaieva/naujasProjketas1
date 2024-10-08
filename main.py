@@ -1107,6 +1107,14 @@ studijos = ['charakternas', 'baletas', 'tautiniai', 'istoriniai']
 for pas in studijos:
     print(pas)
 
+# 21.Susikurkite masyvą šalių pavadinimams saugoti ir jį užpildykite
+# duomenimis. Išveskite šalių pavadinimus atskirose eilutėse, su prierašu
+# "šalis" ir tada nurodant šalį iš masyvo.
+country = ['France', 'Spain', 'Lithuania', 'Portugal', 'USA']
+for CName in country:
+    print(CName)
+    print(f'Šalis: {CName}')
+
 
 
 
