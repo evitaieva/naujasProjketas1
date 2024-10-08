@@ -1013,16 +1013,26 @@ from traceback import print_list
 # Tris kartus iškritus herbui;
 # Tris kartus iš eilės iškritus herbui;
 
+# h = 0
+# S = 1
+# metimai = []
+# while True:
+#     metimas = random.randint(0, 1)
+#     metimai.append(metimas)
+#     if metimas == h:
+#         break
+
 h = 0
-S = 1
+s = 1
 metimai = []
 while True:
     metimas = random.randint(0, 1)
     metimai.append(metimas)
-    if metimas == h:
+    if metimai.count(0) == 3:
         break
+print((str(metimai).replace(str(h), 'h').replace(str(s), 's')))
 
-print((str(metimai).replace(str(H), 'H').replace(str(S), 'S')))
+print((str(metimai).replace(str(h), 'h').replace(str(s), 's')))
 
 
 
