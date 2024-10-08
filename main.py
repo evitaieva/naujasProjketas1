@@ -1022,20 +1022,28 @@ from traceback import print_list
 #     if metimas == h:
 #         break
 
+# h = 0
+# s = 1
+# metimai = []
+# while True:
+#     metimas = random.randint(0, 1)
+#     metimai.append(metimas)
+#     if metimai.count(0) == 3:
+#         break
+# print((str(metimai).replace(str(h), 'h').replace(str(s), 's')))
+#
+# print((str(metimai).replace(str(h), 'h').replace(str(s), 's')))
+
+
 h = 0
 s = 1
 metimai = []
 while True:
     metimas = random.randint(0, 1)
     metimai.append(metimas)
-    if metimai.count(0) == 3:
+    if metimai[-3:] == [0, 0, 0]:
         break
 print((str(metimai).replace(str(h), 'h').replace(str(s), 's')))
-
-print((str(metimai).replace(str(h), 'h').replace(str(s), 's')))
-
-
-
 
 
 
