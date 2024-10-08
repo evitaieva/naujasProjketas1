@@ -902,13 +902,13 @@ from traceback import print_list
 # yra didesnis nei 20.
 
 
-# number = 10
+# number = 20
 # while True:
 #     number += 0
 #     print(number)
-#     if number / number == 1:
+#     if number / number == 20:
 #        break
-# print("hi")
+
 
 
 # 1. Sukurkite ciklą kuris atspausdintų 10 kartų žodį “labas”.
@@ -952,11 +952,46 @@ from traceback import print_list
 # 7.Atspausdinkite kas antrą skaičių nuo 10 iki 50. (porinius) Jei skaičius dalinasi iš 10 be liekanos jo nespausdinkit
 # ( naudokite continue.) (atspausdinti visus porinus skaičius, išskyrus tuos kurie dalinasi iš 10 be liekanos)
 
-number = 10
-while number < 50:
-    number += 1
-    if number % 10 ==0:
-        continue
-    if number % 2 == 0:
-        print(number)
+# number = 10
+# while number < 50:
+#     number += 1
+#     if number % 10 ==0:
+#         continue
+#     if number % 2 == 0:
+#         print(number)
+
+
+# 8. Sukurkite ciklą kuris suktųsi nuo 0 iki 20. Suskaičiuokite, kiek kartų kintamasis i turėjo porinę reikšmę;
+# number = 0
+# while number < 20:
+#     number +=1
+#     if number % 2==0:
+#         print(number)
+# counter = 20
+# for i in range(0,20):
+#     if i % 2 == 0:
+#         print(i)
+#         counter = count(int(i))
+#         print(counter)
+
+# 9. Suskaičiuokite kiek 3čio uždavinio masyve yra žodžių trumpesnių nei 5 simboliai,
+# ir kiek ilgesnių nei 7 simboliai. (du skaičiavimai) - NEISPRESTAS
+
+# 10. Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300, atspausdinkite juos atskirtus tarpais
+# ir suskaičiuokite kiek tarp jų yra didesnių už 150.  Skaičiai didesni nei 275 turi
+# būti atspausdinti skliausteliuose” [ ] “.
+
+numbers = [random.randint(0, 300)  for number in range(300)]
+countAbove_150 = len([number for number in numbers if number > 150])
+numbersAbove_275 =[number for number in numbers if number > 275]
+
+nums = [number if number not in numbersAbove_275 else f'[{number}]' for number in numbers]
+
+strNums = str(nums)
+spacedNums = strNums.replace(',', ' ').replace("'", '')
+
+print(f'numbers: {spacedNums[1:-1]}')
+
+
+
 
